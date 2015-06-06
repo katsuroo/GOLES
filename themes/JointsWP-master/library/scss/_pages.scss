@@ -1,0 +1,52 @@
+/*
+Stylings for pages
+*/
+
+.entry-content{
+  text-align: justify;
+  padding: 1rem;
+}
+
+.page-content{
+// background-color: rgb(247, 247, 247);
+}
+
+.about-us{
+  @include card();
+  display:inline-block;
+  text-align: left;
+  padding: 2rem;
+  h2{
+    @include card-title();
+    text-align: center;
+  }
+  .google-map{
+    padding: 1rem;
+    text-align:justify;
+    h5{
+      font-weight:600;
+    }
+    background-color: rgb(247, 247, 247);
+  }
+}
+
+.tabs{
+  .responsive-tabs__panel--active{
+    min-height:400px;
+  }
+  .tab-image{
+    margin-top: 2.6rem;
+    display:inline-block;
+    img{
+      max-width: 100% !important;
+    }
+  }
+  .tab-content{
+    padding:.5rem;
+    display:inline-block;
+  }
+  .responsive-tabs__list__item--active{
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+}

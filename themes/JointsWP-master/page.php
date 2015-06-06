@@ -1,0 +1,18 @@
+<?php get_header(); ?>
+			
+			<div id="content">
+			
+				<div id="inner-content" class="row">
+			
+				    <div id="main" class="large-8 medium-8 columns" role="main">
+					
+                            <?php load_template( 'partials/loop-tabs') ?>
+					    					
+    				</div> <!-- end #main -->
+    
+				    <?php get_sidebar(); ?>
+				</div> <!-- end #inner-content -->
+    
+			</div> <!-- end #content -->
+
+<?php get_footer(); ?>

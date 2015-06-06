@@ -1,0 +1,56 @@
+$dark-color: #951f26;
+$light-color: #feeac1;
+$size: .891vw;
+$line-height: 85%;
+$border: $size/2.97;
+
+@mixin lower-base{
+  line-height: $line-height;
+  display: inline-block;
+  font-size: 571%;
+  border-top: solid $border $light-color;
+  border-bottom: solid $border $dark-color;
+  letter-spacing: .01em;
+  margin:0;
+  padding:0;
+}
+
+.goles-logo {
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: $size;
+  font-weight: bold;
+  color: $light-color;
+  margin: 0 auto;
+  background-color: $light-color;
+  padding: $border;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+
+  .upper-text {
+    line-height: $line-height;
+    display: block;
+    letter-spacing: .16em;
+    border: solid $border $dark-color;
+    font-size: 104%;
+    background-color: $dark-color;
+    padding: 1%;
+  }
+
+  .lower-text-1 {
+    @include lower-base();
+    background-color: $dark-color;
+  }
+  .lower-text-2{
+    @include lower-base();
+    color: $dark-color;
+    background-color: $light-color;
+  }
+  .filler{
+    @include lower-base();
+    background-color: $dark-color;
+    border-top: solid $border $dark-color;
+    width: $border;
+  }
+}
+

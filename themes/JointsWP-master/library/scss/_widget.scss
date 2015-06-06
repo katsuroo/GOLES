@@ -1,0 +1,37 @@
+.twitter-timeline{
+  overflow-x:scroll;
+  height:500px !important;
+  width:100%;
+}
+
+.tweets{
+  @include card();
+  text-align: left;
+  padding:0;
+  h4{
+    @include card-title();
+  }
+}
+
+
+.sidebar-container{
+  #sidebar1{
+    padding: 0;
+    width:100%;
+    .meetup{
+      @include card();
+      padding:0;
+      .widgettitle{
+        @include card-title();
+      }
+      .meetup_list{
+        text-align:left;
+        padding:.5rem;
+      }
+    }
+  }
+
+
+}
+
+
