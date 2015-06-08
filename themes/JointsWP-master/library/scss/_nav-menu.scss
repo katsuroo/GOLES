@@ -1,4 +1,6 @@
 $navbar-color: #C14234;
+$navbar-text: #FFF2DA;
+
 
 .navbar-background{
   background-color:$navbar-color;
@@ -22,13 +24,12 @@ nav.top-bar {
   li {
     background-color:$navbar-color;
     a{
-      color: #F7EEDD;
+      color: $navbar-text;
       background-color:$navbar-color;
       display:inline-block !important;
-      font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+      font-family: 'Roboto Condensed', san-serif;
       font-weight: 600;
-      font-size: 1.1vw;
-      padding: 0 .8vw;
+      font-size: 1rem;
 
       //link hover
       &:hover{
@@ -43,7 +44,7 @@ nav.top-bar {
 .goles-logo{
   margin-right:10px;
   position: relative;
-  top: -4em;
+  top: -3.3em;
   box-shadow: 5px 5px 0 #ad2e1b;
     //masks logo with home link
     .home-link{
@@ -74,7 +75,7 @@ MEDIA QUERIES
 @media #{$medium-only}{
 
   .goles-logo{
-    font-size: 1.4vw !important;
+    font-size: .67rem !important;
   }
 
   #menu-top-menu {
@@ -84,7 +85,7 @@ MEDIA QUERIES
         display:inline-block !important;
         background-color:$navbar-color;
         font-weight: bold;
-        font-size: 1.6vw;
+        font-size: .9rem;
         padding-right: .6vw;
       }
     }

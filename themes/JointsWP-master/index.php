@@ -2,7 +2,7 @@
 			
 			<div id="content">
 
-				<div id="inner-content" class="large-10 medium 12 centered">
+				<div id="inner-content" class="row">
                     <div class="sidebar-container large-3 medium-4 small-12 pull-left">
                         <?php get_sidebar(); ?>
                     </div>

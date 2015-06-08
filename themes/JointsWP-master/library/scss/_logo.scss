@@ -1,6 +1,6 @@
 $dark-color: #951f26;
 $light-color: #feeac1;
-$size: .891vw;
+$size: .69rem;
 $line-height: 85%;
 $border: $size/2.97;
 
@@ -22,7 +22,7 @@ $border: $size/2.97;
   color: $light-color;
   margin: 0 auto;
   background-color: $light-color;
-  padding: $border;
+  padding: .2rem;
   display: inline-block;
   text-align: center;
   white-space: nowrap;

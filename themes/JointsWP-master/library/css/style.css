@@ -10692,7 +10692,7 @@ be set to display none.
 }
 /* line 1, ../scss/_widget.scss */
 .twitter-timeline {
-  overflow-x: scroll;
+  overflow-y: scroll;
   height: 500px !important;
   width: 100%;
 }
@@ -10703,7 +10703,7 @@ be set to display none.
   font-family: roboto condensed;
   color: #313030;
   background-color: #fcfcfc;
-  box-shadow: 5px 5px 0 #CDCDCD;
+  box-shadow: 6px 6px 0 #CDCDCD;
   border: solid 1px #e9e9e9;
   margin: 0 0 1rem;
   text-align: left;
@@ -10731,7 +10731,7 @@ be set to display none.
   font-family: roboto condensed;
   color: #313030;
   background-color: #fcfcfc;
-  box-shadow: 5px 5px 0 #CDCDCD;
+  box-shadow: 6px 6px 0 #CDCDCD;
   border: solid 1px #e9e9e9;
   margin: 0 0 1rem;
   padding: 0;
@@ -10752,55 +10752,54 @@ be set to display none.
   padding: .5rem;
 }
 
-/* line 3, ../scss/_nav-menu.scss */
+/* line 5, ../scss/_nav-menu.scss */
 .navbar-background {
   background-color: #C14234;
   text-align: left;
 }
 
-/* line 8, ../scss/_nav-menu.scss */
+/* line 10, ../scss/_nav-menu.scss */
 .nav-menu {
   background-color: #C14234;
 }
 
-/* line 12, ../scss/_nav-menu.scss */
+/* line 14, ../scss/_nav-menu.scss */
 nav.top-bar {
   line-height: normal;
 }
-/* line 14, ../scss/_nav-menu.scss */
+/* line 16, ../scss/_nav-menu.scss */
 nav.top-bar section.top-bar-section {
   vertical-align: top;
   display: inline-block;
 }
 
-/* line 22, ../scss/_nav-menu.scss */
+/* line 24, ../scss/_nav-menu.scss */
 #menu-top-menu li {
   background-color: #C14234;
 }
-/* line 24, ../scss/_nav-menu.scss */
+/* line 26, ../scss/_nav-menu.scss */
 #menu-top-menu li a {
-  color: #F7EEDD;
+  color: #FFF2DA;
   background-color: #C14234;
   display: inline-block !important;
-  font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, "Nimbus Sans L", sans-serif;
+  font-family: 'Roboto Condensed', san-serif;
   font-weight: 600;
-  font-size: 1.1vw;
-  padding: 0 .8vw;
+  font-size: 1rem;
 }
-/* line 34, ../scss/_nav-menu.scss */
+/* line 35, ../scss/_nav-menu.scss */
 #menu-top-menu li a:hover {
   background-color: #b53e31;
   color: white;
 }
 
-/* line 43, ../scss/_nav-menu.scss */
+/* line 44, ../scss/_nav-menu.scss */
 .goles-logo {
   margin-right: 10px;
   position: relative;
-  top: -4em;
+  top: -3.3em;
   box-shadow: 5px 5px 0 #ad2e1b;
 }
-/* line 49, ../scss/_nav-menu.scss */
+/* line 50, ../scss/_nav-menu.scss */
 .goles-logo .home-link {
   position: absolute;
   width: 100%;
@@ -10815,18 +10814,18 @@ nav.top-bar section.top-bar-section {
 MEDIA QUERIES
 */
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  /* line 76, ../scss/_nav-menu.scss */
+  /* line 77, ../scss/_nav-menu.scss */
   .goles-logo {
-    font-size: 1.4vw !important;
+    font-size: .67rem !important;
   }
 
-  /* line 82, ../scss/_nav-menu.scss */
+  /* line 83, ../scss/_nav-menu.scss */
   #menu-top-menu li a {
     white-space: nowrap;
     display: inline-block !important;
     background-color: #C14234;
     font-weight: bold;
-    font-size: 1.6vw;
+    font-size: .9rem;
     padding-right: .6vw;
   }
 }
@@ -10846,7 +10845,6 @@ MEDIA QUERIES
 /* line 14, ../scss/_custom.scss */
 .centered {
   margin: 0 auto;
-  text-align: center;
 }
 
 /* line 2, ../scss/_posts.scss */
@@ -10860,7 +10858,7 @@ MEDIA QUERIES
   font-family: roboto condensed;
   color: #313030;
   background-color: #fcfcfc;
-  box-shadow: 5px 5px 0 #CDCDCD;
+  box-shadow: 6px 6px 0 #CDCDCD;
   border: solid 1px #e9e9e9;
   margin: 0 0 1rem;
 }
@@ -10901,12 +10899,12 @@ MEDIA QUERIES
 /* line 18, ../scss/_logo.scss */
 .goles-logo {
   font-family: "Arial Black", Gadget, sans-serif;
-  font-size: 0.891vw;
+  font-size: 0.69rem;
   font-weight: bold;
   color: #feeac1;
   margin: 0 auto;
   background-color: #feeac1;
-  padding: 0.3vw;
+  padding: .2rem;
   display: inline-block;
   text-align: center;
   white-space: nowrap;
@@ -10916,7 +10914,7 @@ MEDIA QUERIES
   line-height: 85%;
   display: block;
   letter-spacing: .16em;
-  border: solid 0.3vw #951f26;
+  border: solid 0.23232rem #951f26;
   font-size: 104%;
   background-color: #951f26;
   padding: 1%;
@@ -10926,8 +10924,8 @@ MEDIA QUERIES
   line-height: 85%;
   display: inline-block;
   font-size: 571%;
-  border-top: solid 0.3vw #feeac1;
-  border-bottom: solid 0.3vw #951f26;
+  border-top: solid 0.23232rem #feeac1;
+  border-bottom: solid 0.23232rem #951f26;
   letter-spacing: .01em;
   margin: 0;
   padding: 0;
@@ -10938,8 +10936,8 @@ MEDIA QUERIES
   line-height: 85%;
   display: inline-block;
   font-size: 571%;
-  border-top: solid 0.3vw #feeac1;
-  border-bottom: solid 0.3vw #951f26;
+  border-top: solid 0.23232rem #feeac1;
+  border-bottom: solid 0.23232rem #951f26;
   letter-spacing: .01em;
   margin: 0;
   padding: 0;
@@ -10951,14 +10949,14 @@ MEDIA QUERIES
   line-height: 85%;
   display: inline-block;
   font-size: 571%;
-  border-top: solid 0.3vw #feeac1;
-  border-bottom: solid 0.3vw #951f26;
+  border-top: solid 0.23232rem #feeac1;
+  border-bottom: solid 0.23232rem #951f26;
   letter-spacing: .01em;
   margin: 0;
   padding: 0;
   background-color: #951f26;
-  border-top: solid 0.3vw #951f26;
-  width: 0.3vw;
+  border-top: solid 0.23232rem #951f26;
+  width: 0.23232rem;
 }
 
 /*
@@ -10976,7 +10974,7 @@ Stylings for pages
   font-family: roboto condensed;
   color: #313030;
   background-color: #fcfcfc;
-  box-shadow: 5px 5px 0 #CDCDCD;
+  box-shadow: 6px 6px 0 #CDCDCD;
   border: solid 1px #e9e9e9;
   margin: 0 0 1rem;
   display: inline-block;

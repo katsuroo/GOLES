@@ -1,17 +1,21 @@
-<div class="large-12 columns show-for-medium-up nav-menu remove-side">
-    <div class="large-10 medium-12 centered">
-		<nav class="top-bar navbar-background" data-topbar>
+<div class="large-12 columns show-for-medium-up remove-side">
+    <div class="sticky contain-to-grid navbar-background">
+        <nav class="top-bar navbar-background" data-topbar>
             <div class="goles-logo">
                 <a href="http://local.wordpress.dev/">
                     <span class="home-link"></span>
                 </a>
                 <div class="upper-text">GOOD OLD LOWER EAST SIDE</div><div class="lower-text-1">GO</div><div class="lower-text-2">LES</div><div class="filler">&nbsp</div>
             </div>
-			<section class="large-8 medium-8 top-bar-section">
-				<?php joints_main_nav(); ?>
-			</section>
-		</nav>
-
+            <ul class="title-area">
+                <!-- Title Area -->
+                <li class="name">
+                </li>
+            </ul>
+            <section class="top-bar-section">
+                <?php joints_main_nav(); ?>
+            </section>
+        </nav>
     </div>
 </div>
 
