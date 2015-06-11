@@ -10701,55 +10701,263 @@ be set to display none.
 .tweets {
   text-align: justify;
   font-family: roboto condensed;
-  color: #313030;
+  color: #49494a;
   background-color: #fcfcfc;
   box-shadow: 6px 6px 0 #CDCDCD;
   border: solid 1px #e9e9e9;
   margin: 0 0 1rem;
+  border: none;
   text-align: left;
   padding: 0;
 }
-/* line 11, ../scss/_widget.scss */
+/* line 12, ../scss/_widget.scss */
 .tweets h4 {
-  font-size: larger;
+  color: #49494a;
+  font-size: large;
   font-weight: bold;
-  margin: 0 .5rem;
-  padding: .9rem 0 .2rem;
+  margin: 0;
+  border-top: solid 2px #efefef;
+  border-bottom: solid 1px #efefef;
+  padding: .9rem .5rem .2rem;
   text-align: left;
-  border-bottom: solid 1px;
   text-transform: uppercase;
 }
 
-/* line 18, ../scss/_widget.scss */
+/* line 19, ../scss/_widget.scss */
 .sidebar-container #sidebar1 {
   padding: 0;
   width: 100%;
 }
-/* line 21, ../scss/_widget.scss */
+/* line 22, ../scss/_widget.scss */
 .sidebar-container #sidebar1 .meetup {
   text-align: justify;
   font-family: roboto condensed;
-  color: #313030;
+  color: #49494a;
   background-color: #fcfcfc;
   box-shadow: 6px 6px 0 #CDCDCD;
   border: solid 1px #e9e9e9;
   margin: 0 0 1rem;
   padding: 0;
 }
-/* line 24, ../scss/_widget.scss */
+/* line 25, ../scss/_widget.scss */
+.sidebar-container #sidebar1 .meetup li {
+  overflow: hidden;
+  width: 100%;
+  padding: .2rem 0;
+  margin: 0;
+}
+/* line 30, ../scss/_widget.scss */
+.sidebar-container #sidebar1 .meetup li div {
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 33, ../scss/_widget.scss */
+.sidebar-container #sidebar1 .meetup li div div {
+  display: block;
+}
+/* line 38, ../scss/_widget.scss */
 .sidebar-container #sidebar1 .meetup .widgettitle {
-  font-size: larger;
+  color: #49494a;
+  font-size: large;
   font-weight: bold;
-  margin: 0 .5rem;
-  padding: .9rem 0 .2rem;
+  margin: 0;
+  border-top: solid 2px #efefef;
+  border-bottom: solid 1px #efefef;
+  padding: .9rem .5rem .2rem;
   text-align: left;
-  border-bottom: solid 1px;
   text-transform: uppercase;
 }
-/* line 27, ../scss/_widget.scss */
+/* line 41, ../scss/_widget.scss */
 .sidebar-container #sidebar1 .meetup .meetup_list {
   text-align: left;
   padding: .5rem;
+}
+/* line 48, ../scss/_widget.scss */
+.sidebar-container .meetup-dt {
+  text-align: right;
+  float: right;
+}
+/* line 51, ../scss/_widget.scss */
+.sidebar-container .meetup-dt .meetup-name {
+  font-weight: bold;
+}
+/* line 54, ../scss/_widget.scss */
+.sidebar-container .meetup-dt .meetup-time {
+  color: #adadad;
+}
+/* line 59, ../scss/_widget.scss */
+.sidebar-container .meetup-date {
+  font-family: Whitney,helvetica,arial,sans-serif;
+  display: inline-block;
+  font-size: 20px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+/* line 66, ../scss/_widget.scss */
+.sidebar-container .meetup-month {
+  text-transform: uppercase;
+  font-size: .7rem;
+  font-weight: bold;
+  display: block;
+  width: 3rem;
+  background-color: #E0393E;
+  color: white;
+}
+/* line 76, ../scss/_widget.scss */
+.sidebar-container .meetup-day {
+  font-size: medium;
+  font-weight: bold;
+  display: block;
+  color: #555;
+}
+
+/* line 3, ../scss/_custom.scss */
+.remove-side {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* line 10, ../scss/_custom.scss */
+.clear {
+  clear: both;
+}
+
+/* line 14, ../scss/_custom.scss */
+.centered {
+  margin: 0 auto;
+}
+
+/* line 2, ../scss/_posts.scss */
+#container {
+  background-color: #f0eee4;
+}
+
+/* line 6, ../scss/_posts.scss */
+.post {
+  text-align: justify;
+  font-family: roboto condensed;
+  color: #49494a;
+  background-color: #fcfcfc;
+  box-shadow: 6px 6px 0 #CDCDCD;
+  border: solid 1px #e9e9e9;
+  margin: 0 0 1rem;
+}
+/* line 8, ../scss/_posts.scss */
+.post .article-header {
+  color: #49494a;
+  font-size: large;
+  font-weight: bold;
+  margin: 0;
+  border-top: solid 2px #efefef;
+  border-bottom: solid 1px #efefef;
+  padding: .9rem .5rem .2rem;
+  text-align: left;
+  text-transform: uppercase;
+}
+/* line 10, ../scss/_posts.scss */
+.post .article-header h2 {
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  /* line 17, ../scss/_posts.scss */
+  .tweets {
+    clear: left;
+    float: left;
+  }
+}
+@media only screen and (max-width: 40em) {
+  /* line 28, ../scss/_posts.scss */
+  .sidebar-container {
+    float: none;
+    padding: 0 0.9375rem;
+  }
+}
+/* line 19, ../scss/_logo.scss */
+.goles-logo {
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 0.71rem;
+  font-weight: bold;
+  color: #feeac1;
+  margin: 0 auto;
+  background-color: #feeac1;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+}
+/* line 31, ../scss/_logo.scss */
+.goles-logo .upper-text {
+  line-height: 85%;
+  display: block;
+  letter-spacing: .16em;
+  border: solid 0.23906rem #951f26;
+  font-size: 104%;
+  background-color: #951f26;
+  padding: 1%;
+}
+/* line 41, ../scss/_logo.scss */
+.goles-logo .lower-text-1 {
+  line-height: 85%;
+  display: inline-block;
+  font-size: 571%;
+  border-top: solid 0.23906rem #feeac1;
+  border-bottom: solid 0.23906rem #951f26;
+  letter-spacing: .01em;
+  margin: 0;
+  padding: 0;
+  background-color: #951f26;
+}
+/* line 45, ../scss/_logo.scss */
+.goles-logo .lower-text-2 {
+  line-height: 85%;
+  display: inline-block;
+  font-size: 571%;
+  border-top: solid 0.23906rem #feeac1;
+  border-bottom: solid 0.23906rem #951f26;
+  letter-spacing: .01em;
+  margin: 0;
+  padding: 0;
+  color: #951f26;
+  background-color: #feeac1;
+}
+/* line 50, ../scss/_logo.scss */
+.goles-logo .filler {
+  line-height: 85%;
+  display: inline-block;
+  font-size: 571%;
+  border-top: solid 0.23906rem #feeac1;
+  border-bottom: solid 0.23906rem #951f26;
+  letter-spacing: .01em;
+  margin: 0;
+  padding: 0;
+  background-color: #951f26;
+  border-top: solid 0.23906rem #951f26;
+  width: 0.23906rem;
+}
+
+/* line 63, ../scss/_logo.scss */
+.small-logo {
+  font-family: arial black;
+  line-height: 95%;
+  font-weight: bold;
+  background-color: #feeac1;
+  font-size: 2rem;
+}
+/* line 71, ../scss/_logo.scss */
+.small-logo .top {
+  background-color: #951f26;
+  color: #feeac1;
+  border-left: solid .1em;
+  border-top: solid .1em;
+}
+/* line 77, ../scss/_logo.scss */
+.small-logo .bottom {
+  background-color: #feeac1;
+  color: #951f26;
+  border-bottom: solid .1em;
+  border-right: solid .1em;
 }
 
 /* line 5, ../scss/_nav-menu.scss */
@@ -10797,7 +11005,6 @@ nav.top-bar section.top-bar-section {
   margin-right: 10px;
   position: relative;
   top: -3.3em;
-  box-shadow: 5px 5px 0 #ad2e1b;
 }
 /* line 50, ../scss/_nav-menu.scss */
 .goles-logo .home-link {
@@ -10810,16 +11017,22 @@ nav.top-bar section.top-bar-section {
   background-image: url("http://local.wordpress.dev/wp-content/uploads/2015/06/Transparent.gif");
 }
 
+/* line 62, ../scss/_nav-menu.scss */
+.small-logo {
+  display: none;
+}
+
 /*
 MEDIA QUERIES
 */
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  /* line 77, ../scss/_nav-menu.scss */
+  /* line 72, ../scss/_nav-menu.scss */
   .goles-logo {
-    font-size: .67rem !important;
+    font-size: 1.15vw;
+    top: -3.8vw;
   }
 
-  /* line 83, ../scss/_nav-menu.scss */
+  /* line 79, ../scss/_nav-menu.scss */
   #menu-top-menu li a {
     white-space: nowrap;
     display: inline-block !important;
@@ -10829,150 +11042,58 @@ MEDIA QUERIES
     padding-right: .6vw;
   }
 }
-/* line 3, ../scss/_custom.scss */
-.remove-side {
-  padding-left: 0;
-  padding-right: 0;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-/* line 10, ../scss/_custom.scss */
-.clear {
-  clear: both;
-}
-
-/* line 14, ../scss/_custom.scss */
-.centered {
-  margin: 0 auto;
-}
-
-/* line 2, ../scss/_posts.scss */
-#container {
-  background-color: #f0eee4;
-}
-
-/* line 6, ../scss/_posts.scss */
-.post {
-  text-align: justify;
-  font-family: roboto condensed;
-  color: #313030;
-  background-color: #fcfcfc;
-  box-shadow: 6px 6px 0 #CDCDCD;
-  border: solid 1px #e9e9e9;
-  margin: 0 0 1rem;
-}
-/* line 8, ../scss/_posts.scss */
-.post .article-header {
-  font-size: larger;
-  font-weight: bold;
-  margin: 0 .5rem;
-  padding: .9rem 0 .2rem;
-  text-align: left;
-  border-bottom: solid 1px;
-  text-transform: uppercase;
-}
-/* line 10, ../scss/_posts.scss */
-.post .article-header h2 {
-  text-transform: uppercase;
-}
-
-@media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  /* line 17, ../scss/_posts.scss */
-  .tweets {
-    clear: left;
-    float: left;
+@media screen and (max-width: 811px) {
+  /* line 92, ../scss/_nav-menu.scss */
+  .goles-logo {
+    top: -1.5rem;
   }
 
-  /* line 21, ../scss/_posts.scss */
-  #main {
-    height: 0;
+  /* line 95, ../scss/_nav-menu.scss */
+  .small-logo {
+    display: inline-block;
+  }
+
+  /* line 98, ../scss/_nav-menu.scss */
+  .big-logo {
+    display: none;
   }
 }
 @media only screen and (max-width: 40em) {
-  /* line 28, ../scss/_posts.scss */
-  .sidebar-container {
-    float: none;
-    padding: 0 0.9375rem;
+  /* line 104, ../scss/_nav-menu.scss */
+  .metaslider {
+    display: none;
+  }
+
+  /* line 107, ../scss/_nav-menu.scss */
+  .goles-logo {
+    display: block;
+  }
+
+  /* line 110, ../scss/_nav-menu.scss */
+  .big-logo {
+    display: block;
   }
 }
-/* line 18, ../scss/_logo.scss */
-.goles-logo {
-  font-family: "Arial Black", Gadget, sans-serif;
-  font-size: 0.69rem;
-  font-weight: bold;
-  color: #feeac1;
-  margin: 0 auto;
-  background-color: #feeac1;
-  padding: .2rem;
-  display: inline-block;
-  text-align: center;
-  white-space: nowrap;
-}
-/* line 30, ../scss/_logo.scss */
-.goles-logo .upper-text {
-  line-height: 85%;
-  display: block;
-  letter-spacing: .16em;
-  border: solid 0.23232rem #951f26;
-  font-size: 104%;
-  background-color: #951f26;
-  padding: 1%;
-}
-/* line 40, ../scss/_logo.scss */
-.goles-logo .lower-text-1 {
-  line-height: 85%;
-  display: inline-block;
-  font-size: 571%;
-  border-top: solid 0.23232rem #feeac1;
-  border-bottom: solid 0.23232rem #951f26;
-  letter-spacing: .01em;
-  margin: 0;
-  padding: 0;
-  background-color: #951f26;
-}
-/* line 44, ../scss/_logo.scss */
-.goles-logo .lower-text-2 {
-  line-height: 85%;
-  display: inline-block;
-  font-size: 571%;
-  border-top: solid 0.23232rem #feeac1;
-  border-bottom: solid 0.23232rem #951f26;
-  letter-spacing: .01em;
-  margin: 0;
-  padding: 0;
-  color: #951f26;
-  background-color: #feeac1;
-}
-/* line 49, ../scss/_logo.scss */
-.goles-logo .filler {
-  line-height: 85%;
-  display: inline-block;
-  font-size: 571%;
-  border-top: solid 0.23232rem #feeac1;
-  border-bottom: solid 0.23232rem #951f26;
-  letter-spacing: .01em;
-  margin: 0;
-  padding: 0;
-  background-color: #951f26;
-  border-top: solid 0.23232rem #951f26;
-  width: 0.23232rem;
+/* line 115, ../scss/_nav-menu.scss */
+li.current-menu-item a {
+  color: #C14234;
+  background-color: #FFF2DA;
 }
 
 /*
 Stylings for pages
 */
-/* line 5, ../scss/_pages.scss */
+/* line 6, ../scss/_pages.scss */
 .entry-content {
   text-align: justify;
   padding: 1rem;
 }
 
-/* line 14, ../scss/_pages.scss */
+/* line 11, ../scss/_pages.scss */
 .about-us {
   text-align: justify;
   font-family: roboto condensed;
-  color: #313030;
+  color: #49494a;
   background-color: #fcfcfc;
   box-shadow: 6px 6px 0 #CDCDCD;
   border: solid 1px #e9e9e9;
@@ -10981,48 +11102,131 @@ Stylings for pages
   text-align: left;
   padding: 2rem;
 }
-/* line 19, ../scss/_pages.scss */
+/* line 16, ../scss/_pages.scss */
 .about-us h2 {
-  font-size: larger;
+  color: #49494a;
+  font-size: large;
   font-weight: bold;
-  margin: 0 .5rem;
-  padding: .9rem 0 .2rem;
+  margin: 0;
+  border-top: solid 2px #efefef;
+  border-bottom: solid 1px #efefef;
+  padding: .9rem .5rem .2rem;
   text-align: left;
-  border-bottom: solid 1px;
   text-transform: uppercase;
+  border-top: none;
   text-align: center;
 }
+
 /* line 23, ../scss/_pages.scss */
-.about-us .google-map {
-  padding: 1rem;
-  text-align: justify;
-  background-color: #f7f7f7;
-}
-/* line 26, ../scss/_pages.scss */
-.about-us .google-map h5 {
-  font-weight: 600;
+#inner-content {
+  padding-top: .5rem !important;
 }
 
-/* line 34, ../scss/_pages.scss */
-.tabs .responsive-tabs__panel--active {
-  min-height: 400px;
-}
-/* line 37, ../scss/_pages.scss */
-.tabs .tab-image {
-  margin-top: 2.6rem;
+/* line 29, ../scss/_pages.scss */
+.accordion {
+  margin: 0;
   display: inline-block;
 }
-/* line 40, ../scss/_pages.scss */
-.tabs .tab-image img {
-  max-width: 100% !important;
+/* line 32, ../scss/_pages.scss */
+.accordion .accordion-navigation {
+  margin: 5px;
+  width: 220px;
+  display: inline-block;
+  vertical-align: top;
 }
-/* line 44, ../scss/_pages.scss */
-.tabs .tab-content {
-  padding: .5rem;
+/* line 38, ../scss/_pages.scss */
+.accordion .accordion-navigation .grid-titlebox {
+  background-color: #333;
+  opacity: .6;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+/* line 46, ../scss/_pages.scss */
+.accordion .accordion-navigation .grid-title {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.7);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  width: 80%;
+  margin: 20% 10%;
+  text-align: center;
+  transition: all .5s;
+}
+/* line 57, ../scss/_pages.scss */
+.accordion .accordion-navigation .grid-triangle {
+  background-color: transparent;
+  border-left: solid 15px transparent;
+  border-right: solid 15px transparent;
+  border-bottom: solid 15px #222222;
+  margin: 0 auto;
+  height: 0;
+  width: 0;
+}
+/* line 67, ../scss/_pages.scss */
+.accordion .accordion-navigation a {
+  position: relative;
+  padding: 0;
+}
+/* line 70, ../scss/_pages.scss */
+.accordion .accordion-navigation a img {
+  width: 100%;
+}
+/* line 75, ../scss/_pages.scss */
+.accordion .accordion-navigation a:hover .grid-title {
+  width: 100%;
+  margin: 20% 0;
+  color: white;
+}
+/* line 82, ../scss/_pages.scss */
+.accordion .accordion-navigation .active {
+  padding: 0 !important;
+  display: inline-block !important;
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+/* line 88, ../scss/_pages.scss */
+.accordion .accordion-navigation .active a {
+  position: relative;
+  display: inline-block !important;
+}
+
+/* line 96, ../scss/_pages.scss */
+.grid-content {
+  padding: 1rem;
+  display: block;
+  background-color: #222222;
+  color: #999;
+}
+/* line 102, ../scss/_pages.scss */
+.grid-content img {
+  vertical-align: top;
+  padding: 1rem 0;
+}
+/* line 107, ../scss/_pages.scss */
+.grid-content p {
   display: inline-block;
 }
-/* line 48, ../scss/_pages.scss */
-.tabs .responsive-tabs__list__item--active {
-  font-size: 1.5rem;
-  font-weight: bold;
+/* line 111, ../scss/_pages.scss */
+.grid-content .grid-text {
+  padding: 1rem;
+  width: 70%;
+  display: inline-block;
+  text-align: justify;
+}
+/* line 112, ../scss/_pages.scss */
+.grid-content .grid-text h3 {
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+/* line 117, ../scss/_pages.scss */
+.grid-content .grid-text p {
+  font-weight: 400;
+  font-size: .95rem;
+}
+/* line 121, ../scss/_pages.scss */
+.grid-content .grid-text ul li {
+  font-size: .95rem;
 }

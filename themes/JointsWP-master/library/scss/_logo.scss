@@ -1,6 +1,7 @@
+//Full-size logo
 $dark-color: #951f26;
 $light-color: #feeac1;
-$size: .69rem;
+$size: 0.71rem;
 $line-height: 85%;
 $border: $size/2.97;
 
@@ -22,7 +23,7 @@ $border: $size/2.97;
   color: $light-color;
   margin: 0 auto;
   background-color: $light-color;
-  padding: .2rem;
+//  padding: .2rem;
   display: inline-block;
   text-align: center;
   white-space: nowrap;
@@ -54,3 +55,29 @@ $border: $size/2.97;
   }
 }
 
+
+//Small logo
+$small-size: 2rem;
+
+
+.small-logo{
+  font-family: arial black;
+  line-height: 95%;
+  font-weight: bold;
+//  display:inline-block;
+  background-color: $light-color;
+//  padding: .1em;
+  font-size: $small-size;
+  .top{
+    background-color:$dark-color;
+    color: $light-color;
+    border-left: solid .1em;
+    border-top: solid .1em;
+  }
+  .bottom{
+    background-color: $light-color;
+    color: $dark-color;
+    border-bottom: solid .1em;
+    border-right: solid .1em;
+  }
+}

@@ -121,7 +121,7 @@ CARD VIEW
 @mixin card(){
   text-align: justify;
   font-family: roboto condensed;
-  color: #313030;
+  color: #49494a;
   background-color: #fcfcfc;
   box-shadow: 6px 6px 0 #CDCDCD;
   border: solid 1px #e9e9e9;
@@ -129,11 +129,13 @@ CARD VIEW
 }
 
 @mixin card-title(){
-  font-size: larger;
+  color: #49494a;
+  font-size: large;
   font-weight:bold;
-  margin: 0 .5rem;
-  padding: .9rem 0 .2rem;
+  margin: 0;
+  border-top: solid 2px rgb(239, 239, 239);
+  border-bottom: solid 1px rgb(239, 239, 239);
+  padding: .9rem .5rem .2rem;
   text-align: left;
-  border-bottom: solid 1px;
   text-transform: uppercase;
 }

@@ -8,13 +8,7 @@
                 <!-- To see additional archive styles, visit the /partials directory -->
                 <?php get_template_part( 'partials/loop-page', 'content' ); ?>
 
-                <div class="tabs">
-                    <?php
-                    $tabName = 'tab-container';
-                    set_query_var( 'tabName', $tabName );
-                    get_template_part( 'partials/loop', 'tabs' );
-                    ?>
-                </div>
+                <?php get_template_part( 'partials/loop', 'grid' );?>
 
             </div> <!-- end #main -->
 

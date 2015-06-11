@@ -17,22 +17,12 @@ require_once(get_template_directory().'/library/custom-post-type.php'); // you c
 // require_once(get_template_directory().'/library/translation/translation.php');
 
 function goles_scripts(){
-    wp_enqueue_style(
-        'elastic_grid_min',
-        get_stylesheet_directory_uri() . '/library/js/jquery-elastic-grid-master/css/elastic_grid.min'
-    );
     wp_enqueue_script(
-        'modernizer',
-        get_stylesheet_directory_uri() . '/library/js/jquery-elastic-grid-master/js/modernizr.custom.js',
-        array( 'jquery' )
-    );
-    wp_enqueue_script(
-        'classie',
-        get_stylesheet_directory_uri() . '/library/js/jquery-elastic-grid-master/js/classie.js'
-    );
-    wp_enqueue_script(
-        'elastic_grid',
-        get_stylesheet_directory_uri() . '/library/js/jquery-elastic-grid-master/js/elastic_grid.js'
+        'custom',
+        get_stylesheet_directory_uri() . '/library/js/custom.js',
+        array(),
+        '1.0.0',
+        true
     );
 }
 add_action( 'wp_enqueue_scripts' , 'goles_scripts');

@@ -6,6 +6,7 @@
 
 .tweets{
   @include card();
+  border: none;
   text-align: left;
   padding:0;
   h4{
@@ -21,6 +22,19 @@
     .meetup{
       @include card();
       padding:0;
+      li{
+        overflow:hidden;
+        width: 100%;
+        padding: .2rem 0;
+        margin: 0 ;
+        div{
+          display: inline-block;
+          vertical-align: top;
+          div{
+            display: block;
+          }
+        }
+      }
       .widgettitle{
         @include card-title();
       }
@@ -31,6 +45,40 @@
     }
   }
 
+.meetup-dt{
+  text-align: right;
+  float:right;
+  .meetup-name{
+    font-weight:bold;
+  }
+  .meetup-time{
+    color:rgb(173, 173, 173);
+  }
+}
+
+  .meetup-date{
+    font-family: Whitney,helvetica,arial,sans-serif;
+    display: inline-block;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  .meetup-month{
+    text-transform: uppercase;
+    font-size: .7rem;
+    font-weight: bold;
+    display:block;
+    width: 3rem;
+    background-color: #E0393E;
+    color: white;
+  }
+
+  .meetup-day{
+    font-size: medium;
+    font-weight: bold;
+    display:block;
+    color: #555;
+  }
 
 }
 

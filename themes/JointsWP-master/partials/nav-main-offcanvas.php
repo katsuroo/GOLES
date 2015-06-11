@@ -1,11 +1,19 @@
 <div class="large-12 columns show-for-medium-up remove-side">
-    <div class="sticky contain-to-grid navbar-background">
+    <div class="contain-to-grid navbar-background">
         <nav class="top-bar navbar-background" data-topbar>
             <div class="goles-logo">
                 <a href="http://local.wordpress.dev/">
                     <span class="home-link"></span>
                 </a>
+                <div class="big-logo">
                 <div class="upper-text">GOOD OLD LOWER EAST SIDE</div><div class="lower-text-1">GO</div><div class="lower-text-2">LES</div><div class="filler">&nbsp</div>
+                </div>
+                <div class="small-logo">
+                    <div class="container">
+                        <div class="top">GO!</div>
+                        <div class="bottom">LES</div>
+                    </div>
+                </div>
             </div>
             <ul class="title-area">
                 <!-- Title Area -->

@@ -45,7 +45,7 @@ nav.top-bar {
   margin-right:10px;
   position: relative;
   top: -3.3em;
-  box-shadow: 5px 5px 0 #ad2e1b;
+//  box-shadow: 5px 5px 0 #ad2e1b;
     //masks logo with home link
     .home-link{
       position:absolute;
@@ -58,24 +58,20 @@ nav.top-bar {
     }
 }
 
-
-
-//[title="donate-button"]{
-////  border-radius:10px;
-////  height:90%;
-//  color: $navbar-color !important;
-//  background-color: white !important;
+//@media #{$large-only}{
+  .small-logo{
+     display: none;
+   }
 //}
-
 
 /*
 MEDIA QUERIES
 */
 
 @media #{$medium-only}{
-
   .goles-logo{
-    font-size: .67rem !important;
+    font-size: 1.15vw;
+    top: -3.8vw;
   }
 
   #menu-top-menu {
@@ -90,4 +86,33 @@ MEDIA QUERIES
       }
     }
   }
+}
+
+@media screen and (max-width: 811px){
+  .goles-logo{
+    top: -1.5rem;
+  }
+  .small-logo{
+    display: inline-block;
+  }
+  .big-logo{
+    display: none;
+  }
+}
+
+@media #{$small-only}{
+  .metaslider{
+    display:none;
+  }
+  .goles-logo{
+    display:block;
+  }
+  .big-logo{
+    display:block;
+  }
+}
+
+li.current-menu-item a{
+  color: $navbar-color;
+  background-color: $navbar-text;
 }
