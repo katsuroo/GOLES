@@ -1,0 +1,9 @@
+.single-staff{
+  height: 141px;
+}
+
+@media #{$small-only}{
+  .single-staff {
+    width: 33% !important;
+  }
+}

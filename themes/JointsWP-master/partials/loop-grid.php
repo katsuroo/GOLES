@@ -54,7 +54,8 @@
         while ( have_rows('tab-container') ) : the_row();
             $title = get_sub_field('tab-title');
             $content = get_sub_field('tab-content');
-            $image = get_sub_field('tab-image')['url'] ?>
+            $image = get_sub_field('tab-image') == null ? false : get_sub_field('tab-image')['url'];?>
+
             <li class="accordion-navigation">
                 <a href="<?php echo '#panel' . $count; ?>">
                     <div class="grid-titlebox">
@@ -63,24 +64,23 @@
                     <?php if($image):?>
                         <img src="<?php echo $image ?>"/>
                     <?php else: ?>
-                        <div></div>
+                        <div class="grid-filler"></div>
                     <?php endif;?>
                 </a>
                 <div id="<?php echo 'panel' . $count; $count++;?>" class="content">
                     <div class="grid-content">
+                        <div class="grid-close"></div>
                         <?php if($image):?>
-                            <img class= ""src="<?php echo $image ?>"/>
+                            <img class= "large-3 medium-3" src="<?php echo $image ?>"/>
                         <?php endif;?>
-                        <div class="grid-text">
+                        <div class="grid-text <?php echo $image ? "large-8 medium-8" : "large-12"?>">
                             <h3><?php echo $title; ?></h3>
                             <?php echo $content ?>
                         </div>
-                        <div class="clear"></div>
                     </div>
                 </div>
             </li>
-        <?php
-        endwhile;
+        <?php endwhile;
     endif;?>
     </ul>
 </div>

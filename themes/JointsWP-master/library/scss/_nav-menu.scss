@@ -5,13 +5,16 @@ $navbar-text: #FFF2DA;
 .navbar-background{
   background-color:$navbar-color;
   text-align:left;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
 }
 
 .nav-menu{
   background-color:$navbar-color;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
 }
 
 nav.top-bar {
+  background-color: $navbar-color;
   line-height:normal;
   section.top-bar-section {
     vertical-align: top;
@@ -33,7 +36,6 @@ nav.top-bar {
 
       //link hover
       &:hover{
-        background-color:darken($navbar-color,3%);
         color: white;
       }
     }
@@ -42,7 +44,6 @@ nav.top-bar {
 
 //Logo
 .goles-logo{
-  margin-right:10px;
   position: relative;
   top: -3.3em;
 //  box-shadow: 5px 5px 0 #ad2e1b;

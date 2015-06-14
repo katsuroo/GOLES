@@ -1,6 +1,6 @@
 <div class="large-12 columns show-for-medium-up remove-side">
     <div class="contain-to-grid navbar-background">
-        <nav class="top-bar navbar-background" data-topbar>
+        <nav class="top-bar" data-topbar>
             <div class="goles-logo">
                 <a href="http://local.wordpress.dev/">
                     <span class="home-link"></span>

@@ -8,6 +8,8 @@
                 <!-- To see additional archive styles, visit the /partials directory -->
                 <?php get_template_part( 'partials/loop-page', 'content' ); ?>
 
+                <?php get_template_part( 'partials/loop', 'grid' );?>
+
             </div> <!-- end #main -->
 
 

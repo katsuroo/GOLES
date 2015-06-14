@@ -126,16 +126,18 @@ CARD VIEW
   box-shadow: 6px 6px 0 #CDCDCD;
   border: solid 1px #e9e9e9;
   margin: 0 0 1rem;
+  border-radius: 4px;
 }
 
 @mixin card-title(){
   color: #49494a;
+  background-color: #F6F7F8;
   font-size: large;
   font-weight:bold;
   margin: 0;
-  border-top: solid 2px rgb(239, 239, 239);
   border-bottom: solid 1px rgb(239, 239, 239);
   padding: .9rem .5rem .2rem;
   text-align: left;
   text-transform: uppercase;
+  border-radius: 4px 4px 0 0;
 }

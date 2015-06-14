@@ -10693,11 +10693,12 @@ be set to display none.
 /* line 1, ../scss/_widget.scss */
 .twitter-timeline {
   overflow-y: scroll;
+  overflow-x: hidden;
   height: 500px !important;
   width: 100%;
 }
 
-/* line 7, ../scss/_widget.scss */
+/* line 8, ../scss/_widget.scss */
 .tweets {
   text-align: justify;
   font-family: roboto condensed;
@@ -10706,29 +10707,31 @@ be set to display none.
   box-shadow: 6px 6px 0 #CDCDCD;
   border: solid 1px #e9e9e9;
   margin: 0 0 1rem;
+  border-radius: 4px;
   border: none;
   text-align: left;
   padding: 0;
 }
-/* line 12, ../scss/_widget.scss */
+/* line 13, ../scss/_widget.scss */
 .tweets h4 {
   color: #49494a;
+  background-color: #F6F7F8;
   font-size: large;
   font-weight: bold;
   margin: 0;
-  border-top: solid 2px #efefef;
   border-bottom: solid 1px #efefef;
   padding: .9rem .5rem .2rem;
   text-align: left;
   text-transform: uppercase;
+  border-radius: 4px 4px 0 0;
 }
 
-/* line 19, ../scss/_widget.scss */
+/* line 20, ../scss/_widget.scss */
 .sidebar-container #sidebar1 {
   padding: 0;
   width: 100%;
 }
-/* line 22, ../scss/_widget.scss */
+/* line 23, ../scss/_widget.scss */
 .sidebar-container #sidebar1 .meetup {
   text-align: justify;
   font-family: roboto condensed;
@@ -10737,55 +10740,57 @@ be set to display none.
   box-shadow: 6px 6px 0 #CDCDCD;
   border: solid 1px #e9e9e9;
   margin: 0 0 1rem;
+  border-radius: 4px;
   padding: 0;
 }
-/* line 25, ../scss/_widget.scss */
+/* line 26, ../scss/_widget.scss */
 .sidebar-container #sidebar1 .meetup li {
   overflow: hidden;
   width: 100%;
   padding: .2rem 0;
   margin: 0;
 }
-/* line 30, ../scss/_widget.scss */
+/* line 31, ../scss/_widget.scss */
 .sidebar-container #sidebar1 .meetup li div {
   display: inline-block;
   vertical-align: top;
 }
-/* line 33, ../scss/_widget.scss */
+/* line 34, ../scss/_widget.scss */
 .sidebar-container #sidebar1 .meetup li div div {
   display: block;
 }
-/* line 38, ../scss/_widget.scss */
+/* line 39, ../scss/_widget.scss */
 .sidebar-container #sidebar1 .meetup .widgettitle {
   color: #49494a;
+  background-color: #F6F7F8;
   font-size: large;
   font-weight: bold;
   margin: 0;
-  border-top: solid 2px #efefef;
   border-bottom: solid 1px #efefef;
   padding: .9rem .5rem .2rem;
   text-align: left;
   text-transform: uppercase;
+  border-radius: 4px 4px 0 0;
 }
-/* line 41, ../scss/_widget.scss */
+/* line 42, ../scss/_widget.scss */
 .sidebar-container #sidebar1 .meetup .meetup_list {
   text-align: left;
   padding: .5rem;
 }
-/* line 48, ../scss/_widget.scss */
+/* line 49, ../scss/_widget.scss */
 .sidebar-container .meetup-dt {
   text-align: right;
   float: right;
 }
-/* line 51, ../scss/_widget.scss */
+/* line 52, ../scss/_widget.scss */
 .sidebar-container .meetup-dt .meetup-name {
   font-weight: bold;
 }
-/* line 54, ../scss/_widget.scss */
+/* line 55, ../scss/_widget.scss */
 .sidebar-container .meetup-dt .meetup-time {
   color: #adadad;
 }
-/* line 59, ../scss/_widget.scss */
+/* line 60, ../scss/_widget.scss */
 .sidebar-container .meetup-date {
   font-family: Whitney,helvetica,arial,sans-serif;
   display: inline-block;
@@ -10793,7 +10798,7 @@ be set to display none.
   text-align: center;
   border: 1px solid #ddd;
 }
-/* line 66, ../scss/_widget.scss */
+/* line 67, ../scss/_widget.scss */
 .sidebar-container .meetup-month {
   text-transform: uppercase;
   font-size: .7rem;
@@ -10803,7 +10808,7 @@ be set to display none.
   background-color: #E0393E;
   color: white;
 }
-/* line 76, ../scss/_widget.scss */
+/* line 77, ../scss/_widget.scss */
 .sidebar-container .meetup-day {
   font-size: medium;
   font-weight: bold;
@@ -10843,18 +10848,20 @@ be set to display none.
   box-shadow: 6px 6px 0 #CDCDCD;
   border: solid 1px #e9e9e9;
   margin: 0 0 1rem;
+  border-radius: 4px;
 }
 /* line 8, ../scss/_posts.scss */
 .post .article-header {
   color: #49494a;
+  background-color: #F6F7F8;
   font-size: large;
   font-weight: bold;
   margin: 0;
-  border-top: solid 2px #efefef;
   border-bottom: solid 1px #efefef;
   padding: .9rem .5rem .2rem;
   text-align: left;
   text-transform: uppercase;
+  border-radius: 4px 4px 0 0;
 }
 /* line 10, ../scss/_posts.scss */
 .post .article-header h2 {
@@ -10875,6 +10882,162 @@ be set to display none.
     padding: 0 0.9375rem;
   }
 }
+/* line 3, ../scss/_grid.scss */
+.accordion {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 1rem;
+  width: 100%;
+  background-color: #e8e6e6;
+  text-align: center;
+}
+/* line 11, ../scss/_grid.scss */
+.accordion .accordion-navigation {
+  margin: 5px;
+  width: 220px;
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 17, ../scss/_grid.scss */
+.accordion .accordion-navigation .grid-titlebox {
+  background-color: #333;
+  opacity: .6;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+/* line 25, ../scss/_grid.scss */
+.accordion .accordion-navigation .grid-title {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  width: 80%;
+  margin: 35% 10%;
+  text-align: center;
+  transition: all .5s;
+  font-size: x-large;
+}
+/* line 37, ../scss/_grid.scss */
+.accordion .accordion-navigation .grid-triangle {
+  background-color: transparent;
+  border-left: solid 15px transparent;
+  border-right: solid 15px transparent;
+  border-bottom: solid 15px #222222;
+  margin: 0 auto;
+  height: 0;
+  width: 0;
+}
+/* line 47, ../scss/_grid.scss */
+.accordion .accordion-navigation a {
+  position: relative;
+  padding: 0;
+}
+/* line 50, ../scss/_grid.scss */
+.accordion .accordion-navigation a img {
+  width: 100%;
+}
+/* line 55, ../scss/_grid.scss */
+.accordion .accordion-navigation a:hover .grid-title {
+  width: 100%;
+  margin: 35% 0;
+  color: white;
+}
+/* line 62, ../scss/_grid.scss */
+.accordion .accordion-navigation .active {
+  padding: 0 !important;
+  display: inline-block !important;
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+/* line 68, ../scss/_grid.scss */
+.accordion .accordion-navigation .active a {
+  position: relative;
+  display: inline-block !important;
+}
+
+/* line 76, ../scss/_grid.scss */
+.grid-content {
+  padding: 1rem;
+  display: block;
+  background-color: #222222;
+  color: #999;
+}
+/* line 82, ../scss/_grid.scss */
+.grid-content img {
+  vertical-align: top;
+  padding: 1rem 0;
+}
+/* line 87, ../scss/_grid.scss */
+.grid-content p {
+  display: inline-block;
+}
+/* line 91, ../scss/_grid.scss */
+.grid-content .grid-text {
+  padding: 1rem;
+  display: inline-block;
+  text-align: justify;
+}
+/* line 92, ../scss/_grid.scss */
+.grid-content .grid-text h3 {
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+/* line 97, ../scss/_grid.scss */
+.grid-content .grid-text p {
+  font-weight: 400;
+  font-size: .95rem;
+}
+/* line 101, ../scss/_grid.scss */
+.grid-content .grid-text ul li {
+  font-size: .95rem;
+}
+
+/* line 111, ../scss/_grid.scss */
+.grid-filler {
+  width: 220px;
+  height: 220px;
+}
+
+/* line 116, ../scss/_grid.scss */
+.grid-close {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 10px;
+  right: 30px;
+  cursor: pointer;
+}
+
+/* line 125, ../scss/_grid.scss */
+.grid-close::before,
+.grid-close::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  height: 1px;
+  background: #888;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* line 138, ../scss/_grid.scss */
+.grid-close::after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/* line 144, ../scss/_grid.scss */
+.grid-close:hover::before,
+.grid-close:hover::after {
+  background: #333;
+}
+
 /* line 19, ../scss/_logo.scss */
 .goles-logo {
   font-family: "Arial Black", Gadget, sans-serif;
@@ -10964,28 +11127,31 @@ be set to display none.
 .navbar-background {
   background-color: #C14234;
   text-align: left;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
-/* line 10, ../scss/_nav-menu.scss */
+/* line 11, ../scss/_nav-menu.scss */
 .nav-menu {
   background-color: #C14234;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
-/* line 14, ../scss/_nav-menu.scss */
+/* line 16, ../scss/_nav-menu.scss */
 nav.top-bar {
+  background-color: #C14234;
   line-height: normal;
 }
-/* line 16, ../scss/_nav-menu.scss */
+/* line 19, ../scss/_nav-menu.scss */
 nav.top-bar section.top-bar-section {
   vertical-align: top;
   display: inline-block;
 }
 
-/* line 24, ../scss/_nav-menu.scss */
+/* line 27, ../scss/_nav-menu.scss */
 #menu-top-menu li {
   background-color: #C14234;
 }
-/* line 26, ../scss/_nav-menu.scss */
+/* line 29, ../scss/_nav-menu.scss */
 #menu-top-menu li a {
   color: #FFF2DA;
   background-color: #C14234;
@@ -10994,19 +11160,17 @@ nav.top-bar section.top-bar-section {
   font-weight: 600;
   font-size: 1rem;
 }
-/* line 35, ../scss/_nav-menu.scss */
+/* line 38, ../scss/_nav-menu.scss */
 #menu-top-menu li a:hover {
-  background-color: #b53e31;
   color: white;
 }
 
-/* line 44, ../scss/_nav-menu.scss */
+/* line 46, ../scss/_nav-menu.scss */
 .goles-logo {
-  margin-right: 10px;
   position: relative;
   top: -3.3em;
 }
-/* line 50, ../scss/_nav-menu.scss */
+/* line 51, ../scss/_nav-menu.scss */
 .goles-logo .home-link {
   position: absolute;
   width: 100%;
@@ -11017,7 +11181,7 @@ nav.top-bar section.top-bar-section {
   background-image: url("http://local.wordpress.dev/wp-content/uploads/2015/06/Transparent.gif");
 }
 
-/* line 62, ../scss/_nav-menu.scss */
+/* line 63, ../scss/_nav-menu.scss */
 .small-logo {
   display: none;
 }
@@ -11026,13 +11190,13 @@ nav.top-bar section.top-bar-section {
 MEDIA QUERIES
 */
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  /* line 72, ../scss/_nav-menu.scss */
+  /* line 73, ../scss/_nav-menu.scss */
   .goles-logo {
     font-size: 1.15vw;
     top: -3.8vw;
   }
 
-  /* line 79, ../scss/_nav-menu.scss */
+  /* line 80, ../scss/_nav-menu.scss */
   #menu-top-menu li a {
     white-space: nowrap;
     display: inline-block !important;
@@ -11043,38 +11207,38 @@ MEDIA QUERIES
   }
 }
 @media screen and (max-width: 811px) {
-  /* line 92, ../scss/_nav-menu.scss */
+  /* line 93, ../scss/_nav-menu.scss */
   .goles-logo {
     top: -1.5rem;
   }
 
-  /* line 95, ../scss/_nav-menu.scss */
+  /* line 96, ../scss/_nav-menu.scss */
   .small-logo {
     display: inline-block;
   }
 
-  /* line 98, ../scss/_nav-menu.scss */
+  /* line 99, ../scss/_nav-menu.scss */
   .big-logo {
     display: none;
   }
 }
 @media only screen and (max-width: 40em) {
-  /* line 104, ../scss/_nav-menu.scss */
+  /* line 105, ../scss/_nav-menu.scss */
   .metaslider {
     display: none;
   }
 
-  /* line 107, ../scss/_nav-menu.scss */
+  /* line 108, ../scss/_nav-menu.scss */
   .goles-logo {
     display: block;
   }
 
-  /* line 110, ../scss/_nav-menu.scss */
+  /* line 111, ../scss/_nav-menu.scss */
   .big-logo {
     display: block;
   }
 }
-/* line 115, ../scss/_nav-menu.scss */
+/* line 116, ../scss/_nav-menu.scss */
 li.current-menu-item a {
   color: #C14234;
   background-color: #FFF2DA;
@@ -11086,10 +11250,9 @@ Stylings for pages
 /* line 6, ../scss/_pages.scss */
 .entry-content {
   text-align: justify;
-  padding: 1rem;
 }
 
-/* line 11, ../scss/_pages.scss */
+/* line 10, ../scss/_pages.scss */
 .about-us {
   text-align: justify;
   font-family: roboto condensed;
@@ -11098,135 +11261,53 @@ Stylings for pages
   box-shadow: 6px 6px 0 #CDCDCD;
   border: solid 1px #e9e9e9;
   margin: 0 0 1rem;
+  border-radius: 4px;
   display: inline-block;
+  padding: 0 0 1rem;
   text-align: left;
-  padding: 2rem;
+  box-shadow: 3px 3px 6px #CDCDCD;
 }
 /* line 16, ../scss/_pages.scss */
+.about-us .entry-content {
+  padding: 2.5rem 2.5rem 1rem;
+}
+/* line 20, ../scss/_pages.scss */
 .about-us h2 {
   color: #49494a;
+  background-color: #F6F7F8;
   font-size: large;
   font-weight: bold;
   margin: 0;
-  border-top: solid 2px #efefef;
   border-bottom: solid 1px #efefef;
   padding: .9rem .5rem .2rem;
   text-align: left;
   text-transform: uppercase;
-  border-top: none;
+  border-radius: 4px 4px 0 0;
   text-align: center;
 }
+/* line 25, ../scss/_pages.scss */
+.about-us h1 {
+  font-family: 'Roboto Condensed', san-serif;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: left;
+  color: #C5C5C5;
+}
 
-/* line 23, ../scss/_pages.scss */
+/* line 35, ../scss/_pages.scss */
 #inner-content {
   padding-top: .5rem !important;
 }
 
-/* line 29, ../scss/_pages.scss */
-.accordion {
-  margin: 0;
-  display: inline-block;
-}
-/* line 32, ../scss/_pages.scss */
-.accordion .accordion-navigation {
-  margin: 5px;
-  width: 220px;
-  display: inline-block;
-  vertical-align: top;
-}
-/* line 38, ../scss/_pages.scss */
-.accordion .accordion-navigation .grid-titlebox {
-  background-color: #333;
-  opacity: .6;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-/* line 46, ../scss/_pages.scss */
-.accordion .accordion-navigation .grid-title {
-  position: absolute;
-  color: rgba(255, 255, 255, 0.7);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  text-transform: uppercase;
-  width: 80%;
-  margin: 20% 10%;
-  text-align: center;
-  transition: all .5s;
-}
-/* line 57, ../scss/_pages.scss */
-.accordion .accordion-navigation .grid-triangle {
-  background-color: transparent;
-  border-left: solid 15px transparent;
-  border-right: solid 15px transparent;
-  border-bottom: solid 15px #222222;
-  margin: 0 auto;
-  height: 0;
-  width: 0;
-}
-/* line 67, ../scss/_pages.scss */
-.accordion .accordion-navigation a {
-  position: relative;
-  padding: 0;
-}
-/* line 70, ../scss/_pages.scss */
-.accordion .accordion-navigation a img {
-  width: 100%;
-}
-/* line 75, ../scss/_pages.scss */
-.accordion .accordion-navigation a:hover .grid-title {
-  width: 100%;
-  margin: 20% 0;
-  color: white;
-}
-/* line 82, ../scss/_pages.scss */
-.accordion .accordion-navigation .active {
-  padding: 0 !important;
-  display: inline-block !important;
-  position: absolute;
-  left: 0;
-  width: 100%;
-}
-/* line 88, ../scss/_pages.scss */
-.accordion .accordion-navigation .active a {
-  position: relative;
-  display: inline-block !important;
+/* line 1, ../scss/_staffs.scss */
+.single-staff {
+  height: 141px;
 }
 
-/* line 96, ../scss/_pages.scss */
-.grid-content {
-  padding: 1rem;
-  display: block;
-  background-color: #222222;
-  color: #999;
-}
-/* line 102, ../scss/_pages.scss */
-.grid-content img {
-  vertical-align: top;
-  padding: 1rem 0;
-}
-/* line 107, ../scss/_pages.scss */
-.grid-content p {
-  display: inline-block;
-}
-/* line 111, ../scss/_pages.scss */
-.grid-content .grid-text {
-  padding: 1rem;
-  width: 70%;
-  display: inline-block;
-  text-align: justify;
-}
-/* line 112, ../scss/_pages.scss */
-.grid-content .grid-text h3 {
-  font-weight: 300;
-  color: rgba(255, 255, 255, 0.8);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-}
-/* line 117, ../scss/_pages.scss */
-.grid-content .grid-text p {
-  font-weight: 400;
-  font-size: .95rem;
-}
-/* line 121, ../scss/_pages.scss */
-.grid-content .grid-text ul li {
-  font-size: .95rem;
+@media only screen and (max-width: 40em) {
+  /* line 6, ../scss/_staffs.scss */
+  .single-staff {
+    width: 33% !important;
+  }
 }

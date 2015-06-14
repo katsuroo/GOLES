@@ -5,18 +5,30 @@ Stylings for pages
 
 .entry-content{
   text-align: justify;
-  padding: 1rem;
 }
 
 .about-us{
   @include card();
   display:inline-block;
+  padding: 0 0 1rem;
   text-align: left;
-  padding: 2rem;
+  box-shadow: 3px 3px 6px #CDCDCD;
+  .entry-content{
+    padding: 2.5rem 2.5rem 1rem;
+  }
+  //For post titles
   h2{
     @include card-title();
-    border-top:none;
     text-align: center;
+  }
+  //Page titles
+  h1{
+    font-family: 'Roboto Condensed', san-serif;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: left;
+    color: #C5C5C5;
   }
 }
 
@@ -24,106 +36,3 @@ Stylings for pages
   padding-top:.5rem !important;
 }
 
-//Configuration for grid view accordions
-//
-.accordion{
-  margin:0;
-  display: inline-block;
-  .accordion-navigation{
-    margin: 5px;
-    width:220px;
-    display:inline-block;
-    vertical-align: top;
-
-    .grid-titlebox{
-      background-color: #333;
-      opacity: .6;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-    }
-
-    .grid-title{
-      position: absolute;
-      color:rgba(255,255,255,0.7);
-      border-bottom:1px solid rgba(255,255,255,0.5);
-      text-transform:uppercase;
-      width: 80%;
-      margin: 20% 10%;
-      text-align: center;
-      transition: all .5s;
-    }
-
-    .grid-triangle{
-      background-color: transparent;
-      border-left: solid 15px transparent;
-      border-right: solid 15px transparent;
-      border-bottom: solid 15px #222222;
-      margin: 0 auto;
-      height: 0;
-      width: 0;
-    }
-
-    a{
-      position:relative;
-      padding: 0;
-      img{
-        width: 100%;
-      }
-      //grid title hover trigger
-      &:hover{
-        .grid-title{
-          width: 100%;
-          margin: 20% 0;
-          color : rgba(255,255,255,1);
-        }
-      }
-    }
-      .active{
-        padding: 0 !important;
-        display:inline-block !important;
-        position: absolute;
-        left:0;
-        width:100%;
-        a{
-          position:relative;
-          display:inline-block !important;
-        }
-      }
-  }
-}
-
-.grid-content{
-  padding: 1rem;
-  display: block;
-  background-color: #222222;
-  color: #999;
-
-  img{
-    vertical-align: top;
-    padding: 1rem 0;
-  }
-
-  p{
-    display:inline-block;
-  }
-
-  .grid-text{
-    h3{
-      font-weight: 300;
-      color: rgba(255,255,255, .8);
-      border-bottom: 1px solid rgba(255,255,255,0.5);
-    }
-    p{
-      font-weight: 400;
-      font-size: .95rem;
-      }
-    ul li{
-      font-size: .95rem;
-    }
-    padding: 1rem;
-    width: 70%;
-    display:inline-block;
-    text-align: justify;
-  }
-}

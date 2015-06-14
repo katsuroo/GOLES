@@ -1,0 +1,147 @@
+//Configuration for grid view accordions
+
+.accordion{
+  display: inline-block;
+  margin:0 auto;
+  padding: 1rem;
+  width:100%;
+  background-color: rgb(232, 230, 230);
+  text-align:center;
+
+  .accordion-navigation{
+    margin: 5px;
+    width:220px;
+    display:inline-block;
+    vertical-align: top;
+
+    .grid-titlebox{
+      background-color: #333;
+      opacity: .6;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+
+    .grid-title{
+      position: absolute;
+      color:rgba(255,255,255,0.8);
+      border-bottom:1px solid rgba(255,255,255,0.5);
+      text-transform:uppercase;
+      width: 80%;
+      margin: 35% 10%;
+      text-align: center;
+      transition: all .5s;
+      font-size: x-large;
+    }
+
+    .grid-triangle{
+      background-color: transparent;
+      border-left: solid 15px transparent;
+      border-right: solid 15px transparent;
+      border-bottom: solid 15px #222222;
+      margin: 0 auto;
+      height: 0;
+      width: 0;
+    }
+
+    a{
+      position:relative;
+      padding: 0;
+      img{
+        width: 100%;
+      }
+      //grid title hover trigger
+      &:hover{
+        .grid-title{
+          width: 100%;
+          margin: 35% 0;
+          color : rgba(255,255,255,1);
+        }
+      }
+    }
+    .active{
+      padding: 0 !important;
+      display:inline-block !important;
+      position: absolute;
+      left:0;
+      width:100%;
+      a{
+        position:relative;
+        display:inline-block !important;
+      }
+    }
+  }
+}
+
+.grid-content{
+  padding: 1rem;
+  display: block;
+  background-color: #222222;
+  color: #999;
+
+  img{
+    vertical-align: top;
+    padding: 1rem 0;
+  }
+
+  p{
+    display:inline-block;
+  }
+
+  .grid-text{
+    h3{
+      font-weight: 300;
+      color: rgba(255,255,255, .8);
+      border-bottom: 1px solid rgba(255,255,255,0.5);
+    }
+    p{
+      font-weight: 400;
+      font-size: .95rem;
+    }
+    ul li{
+      font-size: .95rem;
+    }
+    padding: 1rem;
+    //    width: 70%;
+    display:inline-block;
+    text-align: justify;
+  }
+}
+
+.grid-filler{
+  width: 220px;
+  height: 220px;
+}
+
+.grid-close {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 10px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.grid-close::before,
+.grid-close::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  height: 1px;
+  background: #888;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.grid-close::after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.grid-close:hover::before,
+.grid-close:hover::after {
+  background: #333;
+}
