@@ -69,7 +69,8 @@
                 </a>
                 <div id="<?php echo 'panel' . $count; $count++;?>" class="content">
                     <div class="grid-content">
-                        <div class="grid-close"></div>
+                        <div class="grid-close">
+                        </div>
                         <?php if($image):?>
                             <img class= "large-3 medium-3" src="<?php echo $image ?>"/>
                         <?php endif;?>

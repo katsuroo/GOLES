@@ -5,14 +5,17 @@
   width:100%;
 }
 
-.tweets{
+.twitter{
   @include card();
   border: none;
   text-align: left;
-  padding:0;
   h4{
     @include card-title();
   }
+}
+
+.tweets{
+  padding: .5rem;
 }
 
 

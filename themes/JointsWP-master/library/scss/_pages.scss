@@ -2,9 +2,13 @@
 Stylings for pages
 */
 
+#inner-content{
+  padding-top:.5rem !important;
+}
 
 .entry-content{
   text-align: justify;
+  padding: .9rem .5rem 0;
 }
 
 .about-us{
@@ -13,9 +17,12 @@ Stylings for pages
   padding: 0 0 1rem;
   text-align: left;
   box-shadow: 3px 3px 6px #CDCDCD;
+
   .entry-content{
-    padding: 2.5rem 2.5rem 1rem;
+    text-align: justify;
+    padding: .9rem 1rem 0;
   }
+
   //For post titles
   h2{
     @include card-title();
@@ -25,14 +32,12 @@ Stylings for pages
   h1{
     font-family: 'Roboto Condensed', san-serif;
     text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bold;
     text-align: left;
     color: #C5C5C5;
   }
 }
 
-#inner-content{
-  padding-top:.5rem !important;
-}
+
 

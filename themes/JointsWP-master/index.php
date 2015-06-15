@@ -12,7 +12,7 @@
 
                     </div> <!-- end #main -->
 
-                    <div class="tweets large-3 medium-4 show-for-medium-up pull-right">
+                    <div class="twitter large-3 medium-4 show-for-medium-up pull-right">
                         <h4>Latest Tweets</h4>
                         <div class="twitter-timeline">
                             <?php db_twitter_feed() ?>

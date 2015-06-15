@@ -10699,7 +10699,7 @@ be set to display none.
 }
 
 /* line 8, ../scss/_widget.scss */
-.tweets {
+.twitter {
   text-align: justify;
   font-family: roboto condensed;
   color: #49494a;
@@ -10710,10 +10710,9 @@ be set to display none.
   border-radius: 4px;
   border: none;
   text-align: left;
-  padding: 0;
 }
-/* line 13, ../scss/_widget.scss */
-.tweets h4 {
+/* line 12, ../scss/_widget.scss */
+.twitter h4 {
   color: #49494a;
   background-color: #F6F7F8;
   font-size: large;
@@ -10726,12 +10725,17 @@ be set to display none.
   border-radius: 4px 4px 0 0;
 }
 
-/* line 20, ../scss/_widget.scss */
+/* line 17, ../scss/_widget.scss */
+.tweets {
+  padding: .5rem;
+}
+
+/* line 23, ../scss/_widget.scss */
 .sidebar-container #sidebar1 {
   padding: 0;
   width: 100%;
 }
-/* line 23, ../scss/_widget.scss */
+/* line 26, ../scss/_widget.scss */
 .sidebar-container #sidebar1 .meetup {
   text-align: justify;
   font-family: roboto condensed;
@@ -10743,23 +10747,23 @@ be set to display none.
   border-radius: 4px;
   padding: 0;
 }
-/* line 26, ../scss/_widget.scss */
+/* line 29, ../scss/_widget.scss */
 .sidebar-container #sidebar1 .meetup li {
   overflow: hidden;
   width: 100%;
   padding: .2rem 0;
   margin: 0;
 }
-/* line 31, ../scss/_widget.scss */
+/* line 34, ../scss/_widget.scss */
 .sidebar-container #sidebar1 .meetup li div {
   display: inline-block;
   vertical-align: top;
 }
-/* line 34, ../scss/_widget.scss */
+/* line 37, ../scss/_widget.scss */
 .sidebar-container #sidebar1 .meetup li div div {
   display: block;
 }
-/* line 39, ../scss/_widget.scss */
+/* line 42, ../scss/_widget.scss */
 .sidebar-container #sidebar1 .meetup .widgettitle {
   color: #49494a;
   background-color: #F6F7F8;
@@ -10772,25 +10776,25 @@ be set to display none.
   text-transform: uppercase;
   border-radius: 4px 4px 0 0;
 }
-/* line 42, ../scss/_widget.scss */
+/* line 45, ../scss/_widget.scss */
 .sidebar-container #sidebar1 .meetup .meetup_list {
   text-align: left;
   padding: .5rem;
 }
-/* line 49, ../scss/_widget.scss */
+/* line 52, ../scss/_widget.scss */
 .sidebar-container .meetup-dt {
   text-align: right;
   float: right;
 }
-/* line 52, ../scss/_widget.scss */
+/* line 55, ../scss/_widget.scss */
 .sidebar-container .meetup-dt .meetup-name {
   font-weight: bold;
 }
-/* line 55, ../scss/_widget.scss */
+/* line 58, ../scss/_widget.scss */
 .sidebar-container .meetup-dt .meetup-time {
   color: #adadad;
 }
-/* line 60, ../scss/_widget.scss */
+/* line 63, ../scss/_widget.scss */
 .sidebar-container .meetup-date {
   font-family: Whitney,helvetica,arial,sans-serif;
   display: inline-block;
@@ -10798,7 +10802,7 @@ be set to display none.
   text-align: center;
   border: 1px solid #ddd;
 }
-/* line 67, ../scss/_widget.scss */
+/* line 70, ../scss/_widget.scss */
 .sidebar-container .meetup-month {
   text-transform: uppercase;
   font-size: .7rem;
@@ -10808,7 +10812,7 @@ be set to display none.
   background-color: #E0393E;
   color: white;
 }
-/* line 77, ../scss/_widget.scss */
+/* line 80, ../scss/_widget.scss */
 .sidebar-container .meetup-day {
   font-size: medium;
   font-weight: bold;
@@ -10886,7 +10890,7 @@ be set to display none.
 .accordion {
   display: inline-block;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 1rem 0;
   width: 100%;
   background-color: #e8e6e6;
   text-align: center;
@@ -10894,7 +10898,7 @@ be set to display none.
 /* line 11, ../scss/_grid.scss */
 .accordion .accordion-navigation {
   margin: 5px;
-  width: 220px;
+  width: 23%;
   display: inline-block;
   vertical-align: top;
 }
@@ -10905,20 +10909,22 @@ be set to display none.
   position: absolute;
   width: 100%;
   height: 100%;
+  transition: all .5s;
 }
-/* line 25, ../scss/_grid.scss */
+/* line 26, ../scss/_grid.scss */
 .accordion .accordion-navigation .grid-title {
   position: absolute;
-  color: rgba(255, 255, 255, 0.8);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
   width: 80%;
   margin: 35% 10%;
   text-align: center;
   transition: all .5s;
-  font-size: x-large;
+  font-size: larger;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
-/* line 37, ../scss/_grid.scss */
+/* line 39, ../scss/_grid.scss */
 .accordion .accordion-navigation .grid-triangle {
   background-color: transparent;
   border-left: solid 15px transparent;
@@ -10928,22 +10934,25 @@ be set to display none.
   height: 0;
   width: 0;
 }
-/* line 47, ../scss/_grid.scss */
+/* line 49, ../scss/_grid.scss */
 .accordion .accordion-navigation a {
   position: relative;
   padding: 0;
 }
-/* line 50, ../scss/_grid.scss */
+/* line 52, ../scss/_grid.scss */
 .accordion .accordion-navigation a img {
   width: 100%;
 }
-/* line 55, ../scss/_grid.scss */
+/* line 57, ../scss/_grid.scss */
 .accordion .accordion-navigation a:hover .grid-title {
   width: 100%;
   margin: 35% 0;
-  color: white;
 }
-/* line 62, ../scss/_grid.scss */
+/* line 61, ../scss/_grid.scss */
+.accordion .accordion-navigation a:hover .grid-titlebox {
+  opacity: .3;
+}
+/* line 66, ../scss/_grid.scss */
 .accordion .accordion-navigation .active {
   padding: 0 !important;
   display: inline-block !important;
@@ -10951,73 +10960,74 @@ be set to display none.
   left: 0;
   width: 100%;
 }
-/* line 68, ../scss/_grid.scss */
+/* line 72, ../scss/_grid.scss */
 .accordion .accordion-navigation .active a {
   position: relative;
   display: inline-block !important;
 }
 
-/* line 76, ../scss/_grid.scss */
+/* line 80, ../scss/_grid.scss */
 .grid-content {
   padding: 1rem;
   display: block;
   background-color: #222222;
   color: #999;
 }
-/* line 82, ../scss/_grid.scss */
+/* line 86, ../scss/_grid.scss */
 .grid-content img {
   vertical-align: top;
   padding: 1rem 0;
 }
-/* line 87, ../scss/_grid.scss */
+/* line 91, ../scss/_grid.scss */
 .grid-content p {
   display: inline-block;
 }
-/* line 91, ../scss/_grid.scss */
+/* line 95, ../scss/_grid.scss */
 .grid-content .grid-text {
   padding: 1rem;
   display: inline-block;
   text-align: justify;
 }
-/* line 92, ../scss/_grid.scss */
+/* line 96, ../scss/_grid.scss */
 .grid-content .grid-text h3 {
   font-weight: 300;
   color: rgba(255, 255, 255, 0.8);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
-/* line 97, ../scss/_grid.scss */
+/* line 101, ../scss/_grid.scss */
 .grid-content .grid-text p {
   font-weight: 400;
   font-size: .95rem;
 }
-/* line 101, ../scss/_grid.scss */
+/* line 105, ../scss/_grid.scss */
 .grid-content .grid-text ul li {
   font-size: .95rem;
 }
 
-/* line 111, ../scss/_grid.scss */
+/* line 115, ../scss/_grid.scss */
 .grid-filler {
   width: 220px;
   height: 220px;
 }
 
-/* line 116, ../scss/_grid.scss */
+/* line 122, ../scss/_grid.scss */
 .grid-close {
   position: absolute;
   width: 40px;
   height: 40px;
   top: 10px;
-  right: 30px;
+  right: 10px;
   cursor: pointer;
 }
 
-/* line 125, ../scss/_grid.scss */
+/* line 131, ../scss/_grid.scss */
 .grid-close::before,
 .grid-close::after {
   content: '';
   position: absolute;
   width: 100%;
   top: 50%;
+  left: 0;
   height: 1px;
   background: #888;
   -webkit-transform: rotate(45deg);
@@ -11025,14 +11035,14 @@ be set to display none.
   transform: rotate(45deg);
 }
 
-/* line 138, ../scss/_grid.scss */
+/* line 145, ../scss/_grid.scss */
 .grid-close::after {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
-/* line 144, ../scss/_grid.scss */
+/* line 151, ../scss/_grid.scss */
 .grid-close:hover::before,
 .grid-close:hover::after {
   background: #333;
@@ -11247,12 +11257,18 @@ li.current-menu-item a {
 /*
 Stylings for pages
 */
-/* line 6, ../scss/_pages.scss */
-.entry-content {
-  text-align: justify;
+/* line 5, ../scss/_pages.scss */
+#inner-content {
+  padding-top: .5rem !important;
 }
 
-/* line 10, ../scss/_pages.scss */
+/* line 9, ../scss/_pages.scss */
+.entry-content {
+  text-align: justify;
+  padding: .9rem .5rem 0;
+}
+
+/* line 14, ../scss/_pages.scss */
 .about-us {
   text-align: justify;
   font-family: roboto condensed;
@@ -11267,11 +11283,12 @@ Stylings for pages
   text-align: left;
   box-shadow: 3px 3px 6px #CDCDCD;
 }
-/* line 16, ../scss/_pages.scss */
+/* line 21, ../scss/_pages.scss */
 .about-us .entry-content {
-  padding: 2.5rem 2.5rem 1rem;
+  text-align: justify;
+  padding: .9rem 1rem 0;
 }
-/* line 20, ../scss/_pages.scss */
+/* line 27, ../scss/_pages.scss */
 .about-us h2 {
   color: #49494a;
   background-color: #F6F7F8;
@@ -11285,19 +11302,14 @@ Stylings for pages
   border-radius: 4px 4px 0 0;
   text-align: center;
 }
-/* line 25, ../scss/_pages.scss */
+/* line 32, ../scss/_pages.scss */
 .about-us h1 {
   font-family: 'Roboto Condensed', san-serif;
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
   text-align: left;
   color: #C5C5C5;
-}
-
-/* line 35, ../scss/_pages.scss */
-#inner-content {
-  padding-top: .5rem !important;
 }
 
 /* line 1, ../scss/_staffs.scss */

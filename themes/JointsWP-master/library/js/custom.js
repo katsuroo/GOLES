@@ -70,3 +70,10 @@ $('.accordion').on('toggled', function (event, accordion) {
         active = '';
     }
 });
+
+// Grid panel close button
+$(".grid-close").click(function(){
+    var accordion = $(this).parents()[1];
+
+    $(accordion).siblings().click();
+});
