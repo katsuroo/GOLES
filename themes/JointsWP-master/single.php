@@ -4,7 +4,7 @@
 
 				<div id="inner-content" class="row">
 			
-					<div id="main" class="large-8 medium-8 columns first" role="main">
+					<div id="main" class="content-panel large-8 medium-8 columns first" role="main">
 					
 					    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					

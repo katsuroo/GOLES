@@ -1,6 +1,6 @@
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 	
-	<article id="post-<?php the_ID(); ?>" <?php post_class(''); ?> role="article">
+	<article class="content-panel" id="post-<?php the_ID(); ?>" <?php post_class(''); ?> role="article">
 							
 		<header class="article-header">
 			<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>

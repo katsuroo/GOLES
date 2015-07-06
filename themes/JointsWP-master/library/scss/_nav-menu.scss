@@ -1,20 +1,29 @@
-$navbar-color: #C14234;
-$navbar-text: #FFF2DA;
-
-
-.navbar-background{
-  background-color:$navbar-color;
-  text-align:left;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+//Logo
+.goles-logo{
+  position: relative;
+  top: -3.3em;
+  //masks logo with home link
+  .home-link{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left: 0;
+    z-index: 1;
+    background-image: url('http://local.wordpress.dev/wp-content/uploads/2015/06/Transparent.gif');
+  }
+}
+//small logo hidden in large and medium
+.small-logo{
+  display: none;
 }
 
-.nav-menu{
-  background-color:$navbar-color;
+.nav-container{
   box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  margin-bottom: 1rem;
 }
 
 nav.top-bar {
-  background-color: $navbar-color;
   line-height:normal;
   section.top-bar-section {
     vertical-align: top;
@@ -22,48 +31,21 @@ nav.top-bar {
   }
 }
 
-//Menu items
-#menu-top-menu {
-  li {
-    background-color:$navbar-color;
-    a{
-      color: $navbar-text;
-      background-color:$navbar-color;
-      display:inline-block !important;
-      font-family: 'Roboto Condensed', san-serif;
-      font-weight: 600;
-      font-size: 1rem;
+[title="twitter-icon"],[title="instagram-icon"],[title="facebook-icon"] {
+  i{
+    color: $logo-dark-color !important;
+    background-color: $logo-light-color !important;
+    width: 28px !important;
+    line-height: 120% !important;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 1px 1px 2px;
 
-      //link hover
-      &:hover{
-        color: white;
-      }
+    &:hover{
+      background-color:white !important;
     }
   }
 }
-
-//Logo
-.goles-logo{
-  position: relative;
-  top: -3.3em;
-//  box-shadow: 5px 5px 0 #ad2e1b;
-    //masks logo with home link
-    .home-link{
-      position:absolute;
-      width:100%;
-      height:100%;
-      top:0;
-      left: 0;
-      z-index: 1;
-      background-image: url('http://local.wordpress.dev/wp-content/uploads/2015/06/Transparent.gif');
-    }
-}
-
-//@media #{$large-only}{
-  .small-logo{
-     display: none;
-   }
-//}
 
 /*
 MEDIA QUERIES
@@ -72,32 +54,36 @@ MEDIA QUERIES
 @media #{$medium-only}{
   .goles-logo{
     font-size: 1.15vw;
-    top: -3.8vw;
+    top: -3vw;
   }
 
-  #menu-top-menu {
-    li {
-      a{
-        white-space: nowrap;
-        display:inline-block !important;
-        background-color:$navbar-color;
-        font-weight: bold;
-        font-size: .9rem;
-        padding-right: .6vw;
-      }
+  #menu-top-menu li a{
+    white-space: nowrap;
+    display:inline-block !important;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0 1.2vw;
+  }
+
+  [title="twitter-icon"],[title="instagram-icon"],[title="facebook-icon"] {
+    i{
+      width:29px !important;
     }
   }
 }
 
-@media screen and (max-width: 811px){
+@media screen and (max-width: 800px){
   .goles-logo{
-    top: -1.5rem;
+    top: -1.9rem;
   }
   .small-logo{
     display: inline-block;
   }
   .big-logo{
     display: none;
+  }
+  #menu-top-menu li a{
+    font-size: 2.3vw;
   }
 }
 
@@ -111,9 +97,4 @@ MEDIA QUERIES
   .big-logo{
     display:block;
   }
-}
-
-li.current-menu-item a{
-  color: $navbar-color;
-  background-color: $navbar-text;
 }

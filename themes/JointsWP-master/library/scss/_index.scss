@@ -1,0 +1,56 @@
+// Widget titles
+h4{
+  font-size: large;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  padding: .7rem .5rem .3rem;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  border-bottom: solid 1px rgb(239, 239, 239);
+}
+
+//Index page post styling
+#main .content-panel .entry-content {
+  border-top: solid 1px rgb(240, 240, 240);
+  p {
+    padding: .7rem;
+  }
+}
+
+@media #{$medium-only}{
+  .tweets{
+    clear: left;
+    float: left;
+  }
+}
+
+@media screen and (max-width: 800px){
+  // Index page
+  .twitter-container{
+    float:left;
+    width: 33%;
+  }
+  .sidebar-container{
+    width: 33%;
+  }
+  .index{
+    width: 66%;
+    float:right;
+  }
+}
+
+@media #{$small-only} {
+  .sidebar-container{
+    width:100%;
+    float:none;
+    padding: 0 0.9375rem;
+  }
+  .index{
+    width: 100%;
+  }
+  .twitter-container{
+    display:none;
+    .twitter-timeline{
+      display:none;
+    }
+  }
+}

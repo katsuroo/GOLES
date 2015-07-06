@@ -1,0 +1,12 @@
+// Base panel class
+$panel-background: #F6F7F8;
+
+.content-panel{
+  color: $stone;
+  text-align: justify;
+  background-color: $panel-background;
+  margin: 0 0 1rem;
+  border-radius: 4px;
+  border: solid 1px #E2E2E2;
+  box-shadow: 5px 5px 0 #CDCDCD;
+}

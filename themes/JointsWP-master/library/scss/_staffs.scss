@@ -1,9 +1,9 @@
 .single-staff{
-  height: 141px;
+  height: 175px;
 }
 
 @media #{$small-only}{
   .single-staff {
-    width: 33% !important;
+    width: 45% !important;
   }
 }

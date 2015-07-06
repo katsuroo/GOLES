@@ -1,5 +1,5 @@
-<div class="large-12 columns show-for-medium-up remove-side">
-    <div class="contain-to-grid navbar-background">
+<div class="large-12 columns show-for-medium-up nav-container remove-side">
+    <div class="contain-to-grid">
         <nav class="top-bar" data-topbar>
             <div class="goles-logo">
                 <a href="http://local.wordpress.dev/">
@@ -28,7 +28,7 @@
 </div>
 
 <!-- This is the nav that will show for mobile/small devices -->
-<div class="large-12 columns show-for-small-only remove-side">
+<div class="large-12 columns show-for-small-only nav-container remove-side">
 	<div class="contain-to-grid">
 		<nav class="tab-bar">
 			<section class="middle tab-bar-section">

@@ -121,6 +121,39 @@ function twentyfifteen_setup() {
 endif; // twentyfifteen_setup
 add_action( 'after_setup_theme', 'twentyfifteen_setup' );
 
+//hooks for contact 7
+function is_already_submitted($formName, $fieldName, $fieldValue){
+    require_once(ABSPATH . 'wp-content/plugins/contact-form-7-to-database-extension/CFDBFormIterator.php');
+    $exp = new CFDBFormIterator();
+    $atts = array();
+    $atts['show'] = $fieldName;
+    $atts['filter'] = "$fieldName=$fieldValue";
+    $exp->export($formName, $atts);
+    $found = false;
+    while ($row = $exp->nextRow()) {
+        $found = true;
+    }
+    return $found;
+}
+
+function my_validate_email($result, $tag) {
+    $formName = 'contact'; // Name of the form containing this field
+    $fieldName = 'your-email111'; // Set to your form's unique field name
+    $name = $tag['name'];
+    if($name == $fieldName){
+        $valueToValidate = $_POST[$name];
+        if (is_already_submitted($formName, $fieldName, $valueToValidate)) {
+            $result->invalidate($name, 'Email has already been submitted'); // error message
+        }
+    }
+    return $result;
+}
+
+// use this if your field is a required fields on your form
+add_filter('wpcf7_validate_email*', 'my_validate_email', 10, 2);
+// use this if your field is not a required field on your form
+//add_filter('wpcf7_validate_email', 'my_validate_email', 10, 2);
+
 /**
  * Register widget area.
  *

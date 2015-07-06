@@ -1,55 +1,67 @@
-.twitter-timeline{
-  overflow-y:scroll;
-  overflow-x:hidden;
-  height:500px !important;
-  width:100%;
-}
-
-.twitter{
-  @include card();
-  border: none;
+//Twitter Widget styling
+.twitter-container{
   text-align: left;
-  h4{
-    @include card-title();
+  display:inline-block !important;
+
+  .twitter-timeline{
+    overflow-y: scroll;
+    overflow-x:hidden;
+    height:500px !important;
+    width:100%;
+
+    .tweets{
+      font-family: $font-family-sans-serif;
+      padding: .5rem;
+      word-wrap: break-word;
+    }
   }
 }
 
-.tweets{
-  padding: .5rem;
-}
-
-
+//Meetup widget
 .sidebar-container{
   #sidebar1{
     padding: 0;
     width:100%;
-    .meetup{
-      @include card();
+    .meetup-widget{
       padding:0;
-      li{
-        overflow:hidden;
-        width: 100%;
-        padding: .2rem 0;
-        margin: 0 ;
-        div{
-          display: inline-block;
-          vertical-align: top;
-          div{
-            display: block;
-          }
-        }
-      }
-      .widgettitle{
-        @include card-title();
-      }
-      .meetup_list{
-        text-align:left;
-        padding:.5rem;
-      }
     }
   }
+  .meetup_list{
+    text-align:left;
+    padding: .5rem .5rem;
+    li{
+      overflow:hidden;
+      margin: .3rem 0;
+    }
+  }
+}
 
-.meetup-dt{
+// Meetup calendar icon
+.meetup-calendar{
+  font-family:"Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  display: inline-block;
+  font-size: 20px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+.meetup-month{
+  text-transform: uppercase;
+  font-size: .7rem;
+  font-weight: bold;
+  display:block;
+  width: 3rem;
+  background-color: #E0393E;
+  color: white;
+}
+.meetup-date{
+  font-size: medium;
+  font-weight: bold;
+  display:block;
+  color: #555;
+}
+
+// Meetup time + date
+.meetup-info{
   text-align: right;
   float:right;
   .meetup-name{
@@ -60,30 +72,14 @@
   }
 }
 
-  .meetup-date{
-    font-family: Whitney,helvetica,arial,sans-serif;
-    display: inline-block;
-    font-size: 20px;
-    text-align: center;
-    border: 1px solid #ddd;
-  }
-  .meetup-month{
-    text-transform: uppercase;
-    font-size: .7rem;
-    font-weight: bold;
-    display:block;
-    width: 3rem;
-    background-color: #E0393E;
-    color: white;
-  }
-
-  .meetup-day{
-    font-size: medium;
-    font-weight: bold;
-    display:block;
-    color: #555;
-  }
-
+//scroll bar fix
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
 }
-
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0,0,0,.5);
+  -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
 

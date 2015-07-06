@@ -1,6 +1,6 @@
 //Full-size logo
-$dark-color: #951f26;
-$light-color: #feeac1;
+$logo-dark-color: #951f26;
+$logo-light-color: #feeac1;
 $size: 0.71rem;
 $line-height: 85%;
 $border: $size/2.97;
@@ -9,8 +9,8 @@ $border: $size/2.97;
   line-height: $line-height;
   display: inline-block;
   font-size: 571%;
-  border-top: solid $border $light-color;
-  border-bottom: solid $border $dark-color;
+  border-top: solid $border $logo-light-color;
+  border-bottom: solid $border $logo-dark-color;
   letter-spacing: .01em;
   margin:0;
   padding:0;
@@ -20,10 +20,9 @@ $border: $size/2.97;
   font-family: "Arial Black", Gadget, sans-serif;
   font-size: $size;
   font-weight: bold;
-  color: $light-color;
+  color: $logo-light-color;
   margin: 0 auto;
-  background-color: $light-color;
-//  padding: .2rem;
+  background-color: $logo-light-color;
   display: inline-block;
   text-align: center;
   white-space: nowrap;
@@ -32,51 +31,49 @@ $border: $size/2.97;
     line-height: $line-height;
     display: block;
     letter-spacing: .16em;
-    border: solid $border $dark-color;
+    border: solid $border $logo-dark-color;
     font-size: 104%;
-    background-color: $dark-color;
+    background-color: $logo-dark-color;
     padding: 1%;
   }
 
   .lower-text-1 {
     @include lower-base();
-    background-color: $dark-color;
+    background-color: $logo-dark-color;
   }
   .lower-text-2{
     @include lower-base();
-    color: $dark-color;
-    background-color: $light-color;
+    color: $logo-dark-color;
+    background-color: $logo-light-color;
   }
   .filler{
     @include lower-base();
-    background-color: $dark-color;
-    border-top: solid $border $dark-color;
+    background-color: $logo-dark-color;
+    border-top: solid $border $logo-dark-color;
     width: $border;
   }
 }
 
 
 //Small logo
-$small-size: 2rem;
+$small-size: 2.3rem;
 
 
 .small-logo{
   font-family: arial black;
   line-height: 95%;
   font-weight: bold;
-//  display:inline-block;
-  background-color: $light-color;
-//  padding: .1em;
+  background-color: $logo-light-color;
   font-size: $small-size;
   .top{
-    background-color:$dark-color;
-    color: $light-color;
+    background-color:$logo-dark-color;
+    color: $logo-light-color;
     border-left: solid .1em;
     border-top: solid .1em;
   }
   .bottom{
-    background-color: $light-color;
-    color: $dark-color;
+    background-color: $logo-light-color;
+    color: $logo-dark-color;
     border-bottom: solid .1em;
     border-right: solid .1em;
   }

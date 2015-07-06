@@ -2,42 +2,42 @@
 Stylings for pages
 */
 
-#inner-content{
-  padding-top:.5rem !important;
+//set page background
+#container{
+  background-color:#f0eee4;
 }
 
-.entry-content{
-  text-align: justify;
-  padding: .9rem .5rem 0;
-}
-
-.about-us{
-  @include card();
+//page panel styling ( modifies base panel class )
+.page-body{
+  text-align: left;
   display:inline-block;
   padding: 0 0 1rem;
-  text-align: left;
   box-shadow: 3px 3px 6px #CDCDCD;
+
+  // Page headings
+  h1{
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: #C5C5C5;
+  }
 
   .entry-content{
     text-align: justify;
     padding: .9rem 1rem 0;
   }
-
-  //For post titles
-  h2{
-    @include card-title();
-    text-align: center;
-  }
-  //Page titles
-  h1{
-    font-family: 'Roboto Condensed', san-serif;
-    text-transform: uppercase;
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-align: left;
-    color: #C5C5C5;
-  }
 }
 
-
-
+.article-header{
+  padding: 1rem .7rem !important;
+  h2{
+//    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    font-size: 2.1rem;
+    text-transform: uppercase;
+  }
+  P{
+    font-size:.9rem;
+    margin: 0;
+  }
+}

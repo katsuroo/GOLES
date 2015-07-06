@@ -8,8 +8,6 @@ and is called at the beginning, after that we call the rest
 of the styles inside media queries.
 ******************************************************************/
 
-@import "//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700";
-
 //
 // IMPORTING STYLES
 //
@@ -118,11 +116,13 @@ be set to display none.
 	@import "print";
 }
 
-@import "widget";
-@import "custom";
-@import "posts";
-@import "grid";
+// custom elements
+@import "helper";
+@import "panel";
 @import "logo";
 @import "nav-menu";
+@import "index";
+@import "widget";
 @import "pages";
+@import "grid";
 @import "staffs";

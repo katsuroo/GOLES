@@ -10,11 +10,11 @@
 
   .accordion-navigation{
     margin: 5px;
-    width:23%;
+    width:22.9%;
     display:inline-block;
     vertical-align: top;
 
-    .grid-titlebox{
+    .grid{
       background-color: #333;
       opacity: .6;
       position: absolute;
@@ -35,7 +35,7 @@
       font-size: larger;
       font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
     }
-
+    // triangle indicator for active panel
     .grid-triangle{
       background-color: transparent;
       border-left: solid 15px transparent;
@@ -52,8 +52,8 @@
       img{
         width: 100%;
       }
-      //grid title hover trigger
-      &:hover{
+      //grid title hover
+      &:hover {
         .grid-title{
           width: 100%;
           margin: 35% 0;
@@ -88,17 +88,14 @@
     padding: 1rem 0;
   }
 
-  p{
-    display:inline-block;
-  }
-
-  .grid-text{
+  .grid-content-text{
     h3{
       font-weight: 300;
       color: rgba(255,255,255, .8);
       border-bottom: 1px solid rgba(255,255,255,0.5);
     }
     p{
+      display:inline-block;
       font-weight: 400;
       font-size: .95rem;
     }
@@ -106,12 +103,12 @@
       font-size: .95rem;
     }
     padding: 1rem;
-    //    width: 70%;
     display:inline-block;
     text-align: justify;
   }
 }
 
+// Gives accordions without image a size
 .grid-filler{
   width: 220px;
   height: 220px;
@@ -151,4 +148,10 @@
 .grid-close:hover::before,
 .grid-close:hover::after {
   background: #333;
+}
+
+@media #{$small-only}{
+  .accordion-navigation{
+    width: 45% !important;
+  }
 }

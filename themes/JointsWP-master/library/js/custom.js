@@ -1,28 +1,3 @@
-//var item = {items:[]};
-//for (var i = 0; i < gridData.length; i++){
-//    item.items.push(
-//        {
-//            title: gridData[i][0],
-//            description:  gridData[i][1],
-//            thumbnail: [gridData[i][2]],
-//            large: [gridData[i][2]],
-//            tags: ['none'],
-//            'button_list':
-//                []
-//        }
-//    );
-//}
-//$(function(){
-//    $("#page-grid").elastic_grid(item);
-//});
-//
-//
-////items:[{
-////    'title'         : 'Title #1',
-////    'description'   : ' Description text here',
-////    'thumbnail'     : ['images/small/1.jpg', 'images/small/2.jpg']
-////}]
-
 var deleteTriangle = function(tri){
     $(tri).remove(".grid-triangle");
 };
@@ -32,48 +7,51 @@ var addTriangle = function(tri){
     $(tri).after(triangle);
 };
 
-var active = '';
-var activeHeight = '';
-var arrowHeight = 15;
+var triangleHeight = 15;
 
-$('.accordion').on('toggled', function (event, accordion) {
-    var parent = $(accordion).parent();
-    var parentHeight = $(parent).height();
-    var eleHeight = $(accordion).height() + arrowHeight;
+//Sets the height of the container to the toggled accordion panel, adds arrows , scroll animations
+//This is necessary since window height calculation doesn't take into account absolute elements
+$('.accordion').on('toggled', function (event, accordionPanel) {
+    var allAccordions = $('.accordion-navigation');
+    var activeAccordion = $(accordionPanel).parent();
+    var accordionGrid = $(accordionPanel).siblings('a');
 
-    var setCurrent = function(){
-        $(parent).height(parentHeight + eleHeight);
-        addTriangle(parent.children("a"));
-        active = $(accordion);
-        activeHeight = active.height() + arrowHeight;
-        //scroll to element
+    deleteTriangle(allAccordions.children());
+
+    if (allAccordions.hasClass('active')) {
+        // Reset all accordion height in case user toggled another accordion when one was active
+
+        // Sets current height and adds panel indicator
+        addTriangle(accordionGrid);
+        activeAccordion.height(accordionGrid.height() + accordionPanel.height() + triangleHeight);
+
+        // Resets height for non active grids when switching
+        $('.accordion-navigation').not('.active').height(accordionGrid.height());
+
         $('html, body').animate({
-            scrollTop: $(accordion).offset().top - 100
+            scrollTop: $(accordionPanel).offset().top - 100
         }, 600);
-    };
-
-    if($(accordion).hasClass('active')){
-        if(!active) {
-            setCurrent();
-        }else{
-            var activeParent = active.parent();
-            //resets previous accordion height;
-            $(activeParent).height(activeParent.height() - activeHeight);
-            deleteTriangle(activeParent.children());
-
-            setCurrent();
-        }
+    } else {
+        // Resets height when closing accordions
+        activeAccordion.height(activeAccordion.height() - accordionPanel.height() - triangleHeight);
     }
-    else{
-        $(parent).height(parentHeight-activeHeight);
-        deleteTriangle(parent.children());
-        active = '';
+});
+
+// Maintains accordion panel height on resize
+$(window).on('resize', function () {
+    var activeAccordion = $('.accordion-navigation.active');
+    var accordionPanel = activeAccordion.children('.content');
+    var accordionGrid = activeAccordion.children('a');
+
+    console.log($('.accordion-navigation').scrollTop());
+    if(activeAccordion){
+        activeAccordion.height(accordionPanel.height() + accordionGrid.height() + triangleHeight);
     }
 });
 
 // Grid panel close button
 $(".grid-close").click(function(){
-    var accordion = $(this).parents()[1];
-
+    var accordion = $(this).parents('.content.active');
     $(accordion).siblings().click();
 });
+

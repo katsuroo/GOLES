@@ -7,7 +7,6 @@ the separate media queries. The base mobile goes outside any query
 and is called at the beginning, after that we call the rest
 of the styles inside media queries.
 ******************************************************************/
-@import "//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700";
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -523,9 +522,6 @@ really slow down your CSS. Don't overdo it.
 /* @include css-gradient(#dfdfdf,#f8f8f8); */
 /*
 SHADOW HELPER
-*/
-/*
-CARD VIEW
 */
 /* line 348, ../../bower_components/foundation/scss/foundation/components/_global.scss */
 meta.foundation-version {
@@ -2230,7 +2226,7 @@ select {
   color: #222222;
   padding: 1rem;
   display: block;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Roboto Condensed", arial, sans-serif;
   font-size: 1rem;
 }
 /* line 143, ../../bower_components/foundation/scss/foundation/components/_accordion.scss */
@@ -2937,7 +2933,7 @@ button, .button {
   border-style: solid;
   border-width: 0;
   cursor: pointer;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Roboto Condensed", arial, sans-serif;
   font-weight: normal;
   line-height: normal;
   margin: 0 0 1.25rem;
@@ -4788,7 +4784,7 @@ select {
   border-color: #cccccc;
   padding: 0.5rem;
   font-size: 0.875rem;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Roboto Condensed", arial, sans-serif;
   color: rgba(0, 0, 0, 0.75);
   line-height: normal;
   border-radius: 0;
@@ -5481,7 +5477,7 @@ kbd {
 /* line 91, ../../bower_components/foundation/scss/foundation/components/_labels.scss */
 .label {
   font-weight: normal;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Roboto Condensed", arial, sans-serif;
   text-align: center;
   text-decoration: none;
   line-height: 1;
@@ -6052,7 +6048,7 @@ ul.pagination li {
   color: #EEEEEE;
   font-weight: normal;
   font-size: 1rem;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Roboto Condensed", arial, sans-serif;
 }
 /* line 143, ../../bower_components/foundation/scss/foundation/components/_pricing-tables.scss */
 .pricing-table .price {
@@ -6062,7 +6058,7 @@ ul.pagination li {
   color: #333333;
   font-weight: normal;
   font-size: 2rem;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Roboto Condensed", arial, sans-serif;
 }
 /* line 144, ../../bower_components/foundation/scss/foundation/components/_pricing-tables.scss */
 .pricing-table .description {
@@ -6418,7 +6414,7 @@ ul.pagination li {
   padding: 0.875rem 0;
   list-style-type: none;
   list-style-position: outside;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Roboto Condensed", arial, sans-serif;
 }
 /* line 70, ../../bower_components/foundation/scss/foundation/components/_side-nav.scss */
 .side-nav li {
@@ -6442,7 +6438,7 @@ ul.pagination li {
 .side-nav li.active > a:first-child:not(.button) {
   color: #1cc7ff;
   font-weight: normal;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Roboto Condensed", arial, sans-serif;
 }
 /* line 93, ../../bower_components/foundation/scss/foundation/components/_side-nav.scss */
 .side-nav li.divider {
@@ -6628,7 +6624,7 @@ ul.pagination li {
   float: left;
   margin-left: 1rem;
   margin-bottom: 0;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Roboto Condensed", arial, sans-serif;
   font-weight: normal;
   font-size: 0.875rem;
   color: #999999;
@@ -6906,7 +6902,7 @@ table tr td {
   background-color: #EFEFEF;
   color: #222222;
   padding: 1rem 2rem;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Roboto Condensed", arial, sans-serif;
   font-size: 1rem;
 }
 /* line 48, ../../bower_components/foundation/scss/foundation/components/_tabs.scss */
@@ -7145,7 +7141,7 @@ meta.foundation-mq-topbar {
 /* line 119, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .contain-to-grid {
   width: 100%;
-  background: #333333;
+  background: #C14234;
 }
 /* line 123, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .contain-to-grid .top-bar {
@@ -7185,7 +7181,7 @@ meta.foundation-mq-topbar {
   height: 2.8125rem;
   line-height: 2.8125rem;
   position: relative;
-  background: #333333;
+  background: #C14234;
   margin-bottom: 0;
 }
 /* line 162, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
@@ -7243,7 +7239,7 @@ meta.foundation-mq-topbar {
 /* line 210, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar .name h1 a, .top-bar .name h2 a, .top-bar .name h3 a, .top-bar .name h4 a, .top-bar .name p a, .top-bar .name span a {
   font-weight: normal;
-  color: #FFFFFF;
+  color: #FFF2DA;
   width: 75%;
   display: block;
   padding: 0 0.9375rem;
@@ -7256,7 +7252,7 @@ meta.foundation-mq-topbar {
 }
 /* line 226, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar .toggle-topbar a {
-  color: #FFFFFF;
+  color: #FFF2DA;
   text-transform: uppercase;
   font-size: 0.8125rem;
   font-weight: bold;
@@ -7302,7 +7298,7 @@ meta.foundation-mq-topbar {
 }
 /* line 276, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar.expanded .title-area {
-  background: #333333;
+  background: #C14234;
 }
 /* line 279, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar.expanded .toggle-topbar a {
@@ -7332,7 +7328,7 @@ meta.foundation-mq-topbar {
 /* line 308, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section .divider,
 .top-bar-section [role="separator"] {
-  border-top: solid 1px #1a1a1a;
+  border-top: solid 1px #61211a;
   clear: both;
   height: 1px;
   width: 100%;
@@ -7345,17 +7341,17 @@ meta.foundation-mq-topbar {
 .top-bar-section ul li > a {
   display: block;
   width: 100%;
-  color: #FFFFFF;
+  color: #FFF2DA;
   padding: 12px 0 12px 0;
   padding-left: 0.9375rem;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  font-size: 0.8125rem;
-  font-weight: normal;
+  font-family: "Roboto Condensed", arial, sans-serif;
+  font-size: large;
+  font-weight: bold;
   text-transform: none;
 }
 /* line 329, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section ul li > a.button {
-  font-size: 0.8125rem;
+  font-size: large;
   padding-right: 0.9375rem;
   padding-left: 0.9375rem;
   background-color: #008CBA;
@@ -7428,7 +7424,7 @@ meta.foundation-mq-topbar {
 }
 /* line 341, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section ul li > button {
-  font-size: 0.8125rem;
+  font-size: large;
   padding-right: 0.9375rem;
   padding-left: 0.9375rem;
   background-color: #008CBA;
@@ -7502,17 +7498,17 @@ meta.foundation-mq-topbar {
 /* line 354, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section ul li:hover:not(.has-form) > a {
   background-color: #555555;
-  background: #333333;
+  background: #C14234;
   color: #FFFFFF;
 }
 /* line 363, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section ul li.active > a {
-  background: #008CBA;
+  background: #C14234;
   color: #FFFFFF;
 }
 /* line 366, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section ul li.active > a:hover {
-  background: #0078a0;
+  background: #C14234;
   color: #FFFFFF;
 }
 /* line 374, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
@@ -7583,7 +7579,7 @@ meta.foundation-mq-topbar {
 }
 /* line 420, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section .dropdown li a.parent-link {
-  font-weight: normal;
+  font-weight: bold;
 }
 /* line 425, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section .dropdown li.title h5, .top-bar-section .dropdown li.parent-link {
@@ -7593,7 +7589,7 @@ meta.foundation-mq-topbar {
 }
 /* line 430, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar-section .dropdown li.title h5 a, .top-bar-section .dropdown li.parent-link a {
-  color: #FFFFFF;
+  color: #FFF2DA;
   display: block;
 }
 /* line 434, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
@@ -7626,7 +7622,7 @@ meta.foundation-mq-topbar {
 @media only screen and (min-width: 40.063em) {
   /* line 457, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar {
-    background: #333333;
+    background: #C14234;
     overflow: visible;
   }
   /* line 172, ../../bower_components/foundation/scss/foundation/components/_global.scss */
@@ -7666,7 +7662,7 @@ meta.foundation-mq-topbar {
   }
   /* line 481, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar.expanded {
-    background: #333333;
+    background: #C14234;
   }
 
   /* line 484, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
@@ -7698,30 +7694,30 @@ meta.foundation-mq-topbar {
   /* line 507, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar-section li.hover > a:not(.button) {
     background-color: #555555;
-    background: #333333;
+    background: #C14234;
     color: #FFFFFF;
   }
   /* line 516, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar-section li:not(.has-form) a:not(.button) {
     padding: 0 0.9375rem;
     line-height: 2.8125rem;
-    background: #333333;
+    background: #C14234;
   }
   /* line 520, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar-section li:not(.has-form) a:not(.button):hover {
     background-color: #555555;
-    background: #333333;
+    background: #C14234;
   }
   /* line 529, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar-section li.active:not(.has-form) a:not(.button) {
     padding: 0 0.9375rem;
     line-height: 2.8125rem;
     color: #FFFFFF;
-    background: #008CBA;
+    background: #C14234;
   }
   /* line 534, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar-section li.active:not(.has-form) a:not(.button):hover {
-    background: #0078a0;
+    background: #C14234;
     color: #FFFFFF;
   }
   /* line 544, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
@@ -7822,14 +7818,14 @@ meta.foundation-mq-topbar {
   .top-bar-section > ul > .divider, .top-bar-section > ul > [role="separator"] {
     border-bottom: none;
     border-top: none;
-    border-right: solid 1px #4e4e4e;
+    border-right: solid 1px #ce5749;
     clear: none;
     height: 2.8125rem;
     width: 0;
   }
   /* line 638, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar-section .has-form {
-    background: #333333;
+    background: #C14234;
     padding: 0 0.9375rem;
     height: 2.8125rem;
   }
@@ -7855,12 +7851,12 @@ meta.foundation-mq-topbar {
   /* line 668, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .no-js .top-bar-section ul li:hover > a {
     background-color: #555555;
-    background: #333333;
+    background: #C14234;
     color: #FFFFFF;
   }
   /* line 677, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .no-js .top-bar-section ul li:active > a {
-    background: #008CBA;
+    background: #C14234;
     color: #FFFFFF;
   }
   /* line 685, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
@@ -8158,7 +8154,7 @@ a img {
 /* Default paragraph styles */
 /* line 234, ../../bower_components/foundation/scss/foundation/components/_type.scss */
 p {
-  font-family: inherit;
+  font-family: "Roboto Condensed", arial, sans-serif;
   font-weight: normal;
   font-size: 1rem;
   line-height: 1.6;
@@ -8180,10 +8176,10 @@ p aside {
 /* Default header styles */
 /* line 252, ../../bower_components/foundation/scss/foundation/components/_type.scss */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  font-weight: normal;
+  font-family: "Roboto Condensed", arial, sans-serif;
+  font-weight: bold;
   font-style: normal;
-  color: #222222;
+  color: #49494a;
   text-rendering: optimizeLegibility;
   margin-top: 0.2rem;
   margin-bottom: 0.5rem;
@@ -8192,7 +8188,7 @@ h1, h2, h3, h4, h5, h6 {
 /* line 262, ../../bower_components/foundation/scss/foundation/components/_type.scss */
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
   font-size: 60%;
-  color: #6f6f6f;
+  color: #88888a;
   line-height: 0;
 }
 
@@ -8229,7 +8225,7 @@ h6 {
 /* line 276, ../../bower_components/foundation/scss/foundation/components/_type.scss */
 .subheader {
   line-height: 1.4;
-  color: #6f6f6f;
+  color: #88888a;
   font-weight: normal;
   margin-top: 0.2rem;
   margin-bottom: 0.5rem;
@@ -8286,7 +8282,7 @@ dl {
   line-height: 1.6;
   margin-bottom: 1.25rem;
   list-style-position: outside;
-  font-family: inherit;
+  font-family: "Roboto Condensed", arial, sans-serif;
 }
 
 /* line 326, ../../bower_components/foundation/scss/foundation/components/_type.scss */
@@ -8365,7 +8361,7 @@ abbr,
 acronym {
   text-transform: uppercase;
   font-size: 90%;
-  color: #222;
+  color: #49494a;
   cursor: help;
 }
 
@@ -8389,7 +8385,7 @@ blockquote {
 blockquote cite {
   display: block;
   font-size: 0.8125rem;
-  color: #555555;
+  color: #727274;
 }
 /* line 408, ../../bower_components/foundation/scss/foundation/components/_type.scss */
 blockquote cite:before {
@@ -8398,14 +8394,14 @@ blockquote cite:before {
 /* line 412, ../../bower_components/foundation/scss/foundation/components/_type.scss */
 blockquote cite a,
 blockquote cite a:visited {
-  color: #555555;
+  color: #727274;
 }
 
 /* line 418, ../../bower_components/foundation/scss/foundation/components/_type.scss */
 blockquote,
 blockquote p {
   line-height: 1.6;
-  color: #6f6f6f;
+  color: #88888a;
 }
 
 /* Microformats */
@@ -10199,7 +10195,7 @@ COMMENT STYLES
   border-style: solid;
   border-width: 0;
   cursor: pointer;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Roboto Condensed", arial, sans-serif;
   font-weight: normal;
   line-height: normal;
   margin: 0 0 1.25rem;
@@ -10690,120 +10686,349 @@ be set to display none.
     display: none;
   }
 }
-/* line 1, ../scss/_widget.scss */
-.twitter-timeline {
+/* line 3, ../scss/_helper.scss */
+.remove-side {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* line 10, ../scss/_helper.scss */
+.clear {
+  clear: both;
+}
+
+/* line 14, ../scss/_helper.scss */
+.centered {
+  margin: 0 auto;
+}
+
+/* line 4, ../scss/_panel.scss */
+.content-panel {
+  color: #49494a;
+  text-align: justify;
+  background-color: #F6F7F8;
+  margin: 0 0 1rem;
+  border-radius: 4px;
+  border: solid 1px #E2E2E2;
+  box-shadow: 5px 5px 0 #CDCDCD;
+}
+
+/* line 19, ../scss/_logo.scss */
+.goles-logo {
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 0.71rem;
+  font-weight: bold;
+  color: #feeac1;
+  margin: 0 auto;
+  background-color: #feeac1;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+}
+/* line 30, ../scss/_logo.scss */
+.goles-logo .upper-text {
+  line-height: 85%;
+  display: block;
+  letter-spacing: .16em;
+  border: solid 0.23906rem #951f26;
+  font-size: 104%;
+  background-color: #951f26;
+  padding: 1%;
+}
+/* line 40, ../scss/_logo.scss */
+.goles-logo .lower-text-1 {
+  line-height: 85%;
+  display: inline-block;
+  font-size: 571%;
+  border-top: solid 0.23906rem #feeac1;
+  border-bottom: solid 0.23906rem #951f26;
+  letter-spacing: .01em;
+  margin: 0;
+  padding: 0;
+  background-color: #951f26;
+}
+/* line 44, ../scss/_logo.scss */
+.goles-logo .lower-text-2 {
+  line-height: 85%;
+  display: inline-block;
+  font-size: 571%;
+  border-top: solid 0.23906rem #feeac1;
+  border-bottom: solid 0.23906rem #951f26;
+  letter-spacing: .01em;
+  margin: 0;
+  padding: 0;
+  color: #951f26;
+  background-color: #feeac1;
+}
+/* line 49, ../scss/_logo.scss */
+.goles-logo .filler {
+  line-height: 85%;
+  display: inline-block;
+  font-size: 571%;
+  border-top: solid 0.23906rem #feeac1;
+  border-bottom: solid 0.23906rem #951f26;
+  letter-spacing: .01em;
+  margin: 0;
+  padding: 0;
+  background-color: #951f26;
+  border-top: solid 0.23906rem #951f26;
+  width: 0.23906rem;
+}
+
+/* line 62, ../scss/_logo.scss */
+.small-logo {
+  font-family: arial black;
+  line-height: 95%;
+  font-weight: bold;
+  background-color: #feeac1;
+  font-size: 2.3rem;
+}
+/* line 68, ../scss/_logo.scss */
+.small-logo .top {
+  background-color: #951f26;
+  color: #feeac1;
+  border-left: solid .1em;
+  border-top: solid .1em;
+}
+/* line 74, ../scss/_logo.scss */
+.small-logo .bottom {
+  background-color: #feeac1;
+  color: #951f26;
+  border-bottom: solid .1em;
+  border-right: solid .1em;
+}
+
+/* line 2, ../scss/_nav-menu.scss */
+.goles-logo {
+  position: relative;
+  top: -3.3em;
+}
+/* line 6, ../scss/_nav-menu.scss */
+.goles-logo .home-link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-image: url("http://local.wordpress.dev/wp-content/uploads/2015/06/Transparent.gif");
+}
+
+/* line 17, ../scss/_nav-menu.scss */
+.small-logo {
+  display: none;
+}
+
+/* line 21, ../scss/_nav-menu.scss */
+.nav-container {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1rem;
+}
+
+/* line 26, ../scss/_nav-menu.scss */
+nav.top-bar {
+  line-height: normal;
+}
+/* line 28, ../scss/_nav-menu.scss */
+nav.top-bar section.top-bar-section {
+  vertical-align: top;
+  display: inline-block;
+}
+
+/* line 35, ../scss/_nav-menu.scss */
+[title="twitter-icon"] i, [title="instagram-icon"] i, [title="facebook-icon"] i {
+  color: #951f26 !important;
+  background-color: #feeac1 !important;
+  width: 28px !important;
+  line-height: 120% !important;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 1px 1px 2px;
+}
+/* line 44, ../scss/_nav-menu.scss */
+[title="twitter-icon"] i:hover, [title="instagram-icon"] i:hover, [title="facebook-icon"] i:hover {
+  background-color: white !important;
+}
+
+/*
+MEDIA QUERIES
+*/
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  /* line 55, ../scss/_nav-menu.scss */
+  .goles-logo {
+    font-size: 1.15vw;
+    top: -3vw;
+  }
+
+  /* line 60, ../scss/_nav-menu.scss */
+  #menu-top-menu li a {
+    white-space: nowrap;
+    display: inline-block !important;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0 1.2vw;
+  }
+
+  /* line 69, ../scss/_nav-menu.scss */
+  [title="twitter-icon"] i, [title="instagram-icon"] i, [title="facebook-icon"] i {
+    width: 29px !important;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* line 76, ../scss/_nav-menu.scss */
+  .goles-logo {
+    top: -1.9rem;
+  }
+
+  /* line 79, ../scss/_nav-menu.scss */
+  .small-logo {
+    display: inline-block;
+  }
+
+  /* line 82, ../scss/_nav-menu.scss */
+  .big-logo {
+    display: none;
+  }
+
+  /* line 85, ../scss/_nav-menu.scss */
+  #menu-top-menu li a {
+    font-size: 2.3vw;
+  }
+}
+@media only screen and (max-width: 40em) {
+  /* line 91, ../scss/_nav-menu.scss */
+  .metaslider {
+    display: none;
+  }
+
+  /* line 94, ../scss/_nav-menu.scss */
+  .goles-logo {
+    display: block;
+  }
+
+  /* line 97, ../scss/_nav-menu.scss */
+  .big-logo {
+    display: block;
+  }
+}
+/* line 2, ../scss/_index.scss */
+h4 {
+  font-size: large;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  padding: .7rem .5rem .3rem;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  border-bottom: solid 1px #efefef;
+}
+
+/* line 12, ../scss/_index.scss */
+#main .content-panel .entry-content {
+  border-top: solid 1px #f0f0f0;
+}
+/* line 14, ../scss/_index.scss */
+#main .content-panel .entry-content p {
+  padding: .7rem;
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  /* line 20, ../scss/_index.scss */
+  .tweets {
+    clear: left;
+    float: left;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* line 28, ../scss/_index.scss */
+  .twitter-container {
+    float: left;
+    width: 33%;
+  }
+
+  /* line 32, ../scss/_index.scss */
+  .sidebar-container {
+    width: 33%;
+  }
+
+  /* line 35, ../scss/_index.scss */
+  .index {
+    width: 66%;
+    float: right;
+  }
+}
+@media only screen and (max-width: 40em) {
+  /* line 42, ../scss/_index.scss */
+  .sidebar-container {
+    width: 100%;
+    float: none;
+    padding: 0 0.9375rem;
+  }
+
+  /* line 47, ../scss/_index.scss */
+  .index {
+    width: 100%;
+  }
+
+  /* line 50, ../scss/_index.scss */
+  .twitter-container {
+    display: none;
+  }
+  /* line 52, ../scss/_index.scss */
+  .twitter-container .twitter-timeline {
+    display: none;
+  }
+}
+/* line 2, ../scss/_widget.scss */
+.twitter-container {
+  text-align: left;
+  display: inline-block !important;
+}
+/* line 6, ../scss/_widget.scss */
+.twitter-container .twitter-timeline {
   overflow-y: scroll;
   overflow-x: hidden;
   height: 500px !important;
   width: 100%;
 }
-
-/* line 8, ../scss/_widget.scss */
-.twitter {
-  text-align: justify;
-  font-family: roboto condensed;
-  color: #49494a;
-  background-color: #fcfcfc;
-  box-shadow: 6px 6px 0 #CDCDCD;
-  border: solid 1px #e9e9e9;
-  margin: 0 0 1rem;
-  border-radius: 4px;
-  border: none;
-  text-align: left;
-}
 /* line 12, ../scss/_widget.scss */
-.twitter h4 {
-  color: #49494a;
-  background-color: #F6F7F8;
-  font-size: large;
-  font-weight: bold;
-  margin: 0;
-  border-bottom: solid 1px #efefef;
-  padding: .9rem .5rem .2rem;
-  text-align: left;
-  text-transform: uppercase;
-  border-radius: 4px 4px 0 0;
-}
-
-/* line 17, ../scss/_widget.scss */
-.tweets {
+.twitter-container .twitter-timeline .tweets {
+  font-family: "Roboto Condensed", arial, sans-serif;
   padding: .5rem;
+  word-wrap: break-word;
 }
 
-/* line 23, ../scss/_widget.scss */
+/* line 22, ../scss/_widget.scss */
 .sidebar-container #sidebar1 {
   padding: 0;
   width: 100%;
 }
-/* line 26, ../scss/_widget.scss */
-.sidebar-container #sidebar1 .meetup {
-  text-align: justify;
-  font-family: roboto condensed;
-  color: #49494a;
-  background-color: #fcfcfc;
-  box-shadow: 6px 6px 0 #CDCDCD;
-  border: solid 1px #e9e9e9;
-  margin: 0 0 1rem;
-  border-radius: 4px;
+/* line 25, ../scss/_widget.scss */
+.sidebar-container #sidebar1 .meetup-widget {
   padding: 0;
 }
 /* line 29, ../scss/_widget.scss */
-.sidebar-container #sidebar1 .meetup li {
+.sidebar-container .meetup_list {
+  text-align: left;
+  padding: .5rem .5rem;
+}
+/* line 32, ../scss/_widget.scss */
+.sidebar-container .meetup_list li {
   overflow: hidden;
-  width: 100%;
-  padding: .2rem 0;
-  margin: 0;
+  margin: .3rem 0;
 }
-/* line 34, ../scss/_widget.scss */
-.sidebar-container #sidebar1 .meetup li div {
-  display: inline-block;
-  vertical-align: top;
-}
-/* line 37, ../scss/_widget.scss */
-.sidebar-container #sidebar1 .meetup li div div {
-  display: block;
-}
-/* line 42, ../scss/_widget.scss */
-.sidebar-container #sidebar1 .meetup .widgettitle {
-  color: #49494a;
-  background-color: #F6F7F8;
-  font-size: large;
-  font-weight: bold;
-  margin: 0;
-  border-bottom: solid 1px #efefef;
-  padding: .9rem .5rem .2rem;
-  text-align: left;
-  text-transform: uppercase;
-  border-radius: 4px 4px 0 0;
-}
-/* line 45, ../scss/_widget.scss */
-.sidebar-container #sidebar1 .meetup .meetup_list {
-  text-align: left;
-  padding: .5rem;
-}
-/* line 52, ../scss/_widget.scss */
-.sidebar-container .meetup-dt {
-  text-align: right;
-  float: right;
-}
-/* line 55, ../scss/_widget.scss */
-.sidebar-container .meetup-dt .meetup-name {
-  font-weight: bold;
-}
-/* line 58, ../scss/_widget.scss */
-.sidebar-container .meetup-dt .meetup-time {
-  color: #adadad;
-}
-/* line 63, ../scss/_widget.scss */
-.sidebar-container .meetup-date {
-  font-family: Whitney,helvetica,arial,sans-serif;
+
+/* line 40, ../scss/_widget.scss */
+.meetup-calendar {
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   display: inline-block;
   font-size: 20px;
   text-align: center;
   border: 1px solid #ddd;
 }
-/* line 70, ../scss/_widget.scss */
-.sidebar-container .meetup-month {
+
+/* line 47, ../scss/_widget.scss */
+.meetup-month {
   text-transform: uppercase;
   font-size: .7rem;
   font-weight: bold;
@@ -10812,80 +11037,86 @@ be set to display none.
   background-color: #E0393E;
   color: white;
 }
-/* line 80, ../scss/_widget.scss */
-.sidebar-container .meetup-day {
+
+/* line 56, ../scss/_widget.scss */
+.meetup-date {
   font-size: medium;
   font-weight: bold;
   display: block;
   color: #555;
 }
 
-/* line 3, ../scss/_custom.scss */
-.remove-side {
-  padding-left: 0;
-  padding-right: 0;
-  margin-left: 0;
-  margin-right: 0;
+/* line 64, ../scss/_widget.scss */
+.meetup-info {
+  text-align: right;
+  float: right;
+}
+/* line 67, ../scss/_widget.scss */
+.meetup-info .meetup-name {
+  font-weight: bold;
+}
+/* line 70, ../scss/_widget.scss */
+.meetup-info .meetup-time {
+  color: #adadad;
 }
 
-/* line 10, ../scss/_custom.scss */
-.clear {
-  clear: both;
+/* line 76, ../scss/_widget.scss */
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
 }
 
-/* line 14, ../scss/_custom.scss */
-.centered {
-  margin: 0 auto;
+/* line 80, ../scss/_widget.scss */
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
 }
 
-/* line 2, ../scss/_posts.scss */
+/*
+Stylings for pages
+*/
+/* line 6, ../scss/_pages.scss */
 #container {
   background-color: #f0eee4;
 }
 
-/* line 6, ../scss/_posts.scss */
-.post {
-  text-align: justify;
-  font-family: roboto condensed;
-  color: #49494a;
-  background-color: #fcfcfc;
-  box-shadow: 6px 6px 0 #CDCDCD;
-  border: solid 1px #e9e9e9;
-  margin: 0 0 1rem;
-  border-radius: 4px;
-}
-/* line 8, ../scss/_posts.scss */
-.post .article-header {
-  color: #49494a;
-  background-color: #F6F7F8;
-  font-size: large;
-  font-weight: bold;
-  margin: 0;
-  border-bottom: solid 1px #efefef;
-  padding: .9rem .5rem .2rem;
+/* line 11, ../scss/_pages.scss */
+.page-body {
   text-align: left;
-  text-transform: uppercase;
-  border-radius: 4px 4px 0 0;
+  display: inline-block;
+  padding: 0 0 1rem;
+  box-shadow: 3px 3px 6px #CDCDCD;
 }
-/* line 10, ../scss/_posts.scss */
-.post .article-header h2 {
+/* line 18, ../scss/_pages.scss */
+.page-body h1 {
   text-transform: uppercase;
+  font-size: 2.5rem;
+  color: #C5C5C5;
+}
+/* line 24, ../scss/_pages.scss */
+.page-body .entry-content {
+  text-align: justify;
+  padding: .9rem 1rem 0;
 }
 
-@media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  /* line 17, ../scss/_posts.scss */
-  .tweets {
-    clear: left;
-    float: left;
-  }
+/* line 30, ../scss/_pages.scss */
+.article-header {
+  padding: 1rem .7rem !important;
 }
-@media only screen and (max-width: 40em) {
-  /* line 28, ../scss/_posts.scss */
-  .sidebar-container {
-    float: none;
-    padding: 0 0.9375rem;
-  }
+/* line 32, ../scss/_pages.scss */
+.article-header h2 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 2.1rem;
+  text-transform: uppercase;
 }
+/* line 39, ../scss/_pages.scss */
+.article-header P {
+  font-size: .9rem;
+  margin: 0;
+}
+
 /* line 3, ../scss/_grid.scss */
 .accordion {
   display: inline-block;
@@ -10898,12 +11129,12 @@ be set to display none.
 /* line 11, ../scss/_grid.scss */
 .accordion .accordion-navigation {
   margin: 5px;
-  width: 23%;
+  width: 22.9%;
   display: inline-block;
   vertical-align: top;
 }
 /* line 17, ../scss/_grid.scss */
-.accordion .accordion-navigation .grid-titlebox {
+.accordion .accordion-navigation .grid {
   background-color: #333;
   opacity: .6;
   position: absolute;
@@ -10979,38 +11210,35 @@ be set to display none.
   padding: 1rem 0;
 }
 /* line 91, ../scss/_grid.scss */
-.grid-content p {
-  display: inline-block;
-}
-/* line 95, ../scss/_grid.scss */
-.grid-content .grid-text {
+.grid-content .grid-content-text {
   padding: 1rem;
   display: inline-block;
   text-align: justify;
 }
-/* line 96, ../scss/_grid.scss */
-.grid-content .grid-text h3 {
+/* line 92, ../scss/_grid.scss */
+.grid-content .grid-content-text h3 {
   font-weight: 300;
   color: rgba(255, 255, 255, 0.8);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
-/* line 101, ../scss/_grid.scss */
-.grid-content .grid-text p {
+/* line 97, ../scss/_grid.scss */
+.grid-content .grid-content-text p {
+  display: inline-block;
   font-weight: 400;
   font-size: .95rem;
 }
-/* line 105, ../scss/_grid.scss */
-.grid-content .grid-text ul li {
+/* line 102, ../scss/_grid.scss */
+.grid-content .grid-content-text ul li {
   font-size: .95rem;
 }
 
-/* line 115, ../scss/_grid.scss */
+/* line 112, ../scss/_grid.scss */
 .grid-filler {
   width: 220px;
   height: 220px;
 }
 
-/* line 122, ../scss/_grid.scss */
+/* line 119, ../scss/_grid.scss */
 .grid-close {
   position: absolute;
   width: 40px;
@@ -11020,7 +11248,7 @@ be set to display none.
   cursor: pointer;
 }
 
-/* line 131, ../scss/_grid.scss */
+/* line 128, ../scss/_grid.scss */
 .grid-close::before,
 .grid-close::after {
   content: '';
@@ -11035,291 +11263,33 @@ be set to display none.
   transform: rotate(45deg);
 }
 
-/* line 145, ../scss/_grid.scss */
+/* line 142, ../scss/_grid.scss */
 .grid-close::after {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
-/* line 151, ../scss/_grid.scss */
+/* line 148, ../scss/_grid.scss */
 .grid-close:hover::before,
 .grid-close:hover::after {
   background: #333;
 }
 
-/* line 19, ../scss/_logo.scss */
-.goles-logo {
-  font-family: "Arial Black", Gadget, sans-serif;
-  font-size: 0.71rem;
-  font-weight: bold;
-  color: #feeac1;
-  margin: 0 auto;
-  background-color: #feeac1;
-  display: inline-block;
-  text-align: center;
-  white-space: nowrap;
-}
-/* line 31, ../scss/_logo.scss */
-.goles-logo .upper-text {
-  line-height: 85%;
-  display: block;
-  letter-spacing: .16em;
-  border: solid 0.23906rem #951f26;
-  font-size: 104%;
-  background-color: #951f26;
-  padding: 1%;
-}
-/* line 41, ../scss/_logo.scss */
-.goles-logo .lower-text-1 {
-  line-height: 85%;
-  display: inline-block;
-  font-size: 571%;
-  border-top: solid 0.23906rem #feeac1;
-  border-bottom: solid 0.23906rem #951f26;
-  letter-spacing: .01em;
-  margin: 0;
-  padding: 0;
-  background-color: #951f26;
-}
-/* line 45, ../scss/_logo.scss */
-.goles-logo .lower-text-2 {
-  line-height: 85%;
-  display: inline-block;
-  font-size: 571%;
-  border-top: solid 0.23906rem #feeac1;
-  border-bottom: solid 0.23906rem #951f26;
-  letter-spacing: .01em;
-  margin: 0;
-  padding: 0;
-  color: #951f26;
-  background-color: #feeac1;
-}
-/* line 50, ../scss/_logo.scss */
-.goles-logo .filler {
-  line-height: 85%;
-  display: inline-block;
-  font-size: 571%;
-  border-top: solid 0.23906rem #feeac1;
-  border-bottom: solid 0.23906rem #951f26;
-  letter-spacing: .01em;
-  margin: 0;
-  padding: 0;
-  background-color: #951f26;
-  border-top: solid 0.23906rem #951f26;
-  width: 0.23906rem;
-}
-
-/* line 63, ../scss/_logo.scss */
-.small-logo {
-  font-family: arial black;
-  line-height: 95%;
-  font-weight: bold;
-  background-color: #feeac1;
-  font-size: 2rem;
-}
-/* line 71, ../scss/_logo.scss */
-.small-logo .top {
-  background-color: #951f26;
-  color: #feeac1;
-  border-left: solid .1em;
-  border-top: solid .1em;
-}
-/* line 77, ../scss/_logo.scss */
-.small-logo .bottom {
-  background-color: #feeac1;
-  color: #951f26;
-  border-bottom: solid .1em;
-  border-right: solid .1em;
-}
-
-/* line 5, ../scss/_nav-menu.scss */
-.navbar-background {
-  background-color: #C14234;
-  text-align: left;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-}
-
-/* line 11, ../scss/_nav-menu.scss */
-.nav-menu {
-  background-color: #C14234;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-}
-
-/* line 16, ../scss/_nav-menu.scss */
-nav.top-bar {
-  background-color: #C14234;
-  line-height: normal;
-}
-/* line 19, ../scss/_nav-menu.scss */
-nav.top-bar section.top-bar-section {
-  vertical-align: top;
-  display: inline-block;
-}
-
-/* line 27, ../scss/_nav-menu.scss */
-#menu-top-menu li {
-  background-color: #C14234;
-}
-/* line 29, ../scss/_nav-menu.scss */
-#menu-top-menu li a {
-  color: #FFF2DA;
-  background-color: #C14234;
-  display: inline-block !important;
-  font-family: 'Roboto Condensed', san-serif;
-  font-weight: 600;
-  font-size: 1rem;
-}
-/* line 38, ../scss/_nav-menu.scss */
-#menu-top-menu li a:hover {
-  color: white;
-}
-
-/* line 46, ../scss/_nav-menu.scss */
-.goles-logo {
-  position: relative;
-  top: -3.3em;
-}
-/* line 51, ../scss/_nav-menu.scss */
-.goles-logo .home-link {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  background-image: url("http://local.wordpress.dev/wp-content/uploads/2015/06/Transparent.gif");
-}
-
-/* line 63, ../scss/_nav-menu.scss */
-.small-logo {
-  display: none;
-}
-
-/*
-MEDIA QUERIES
-*/
-@media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  /* line 73, ../scss/_nav-menu.scss */
-  .goles-logo {
-    font-size: 1.15vw;
-    top: -3.8vw;
-  }
-
-  /* line 80, ../scss/_nav-menu.scss */
-  #menu-top-menu li a {
-    white-space: nowrap;
-    display: inline-block !important;
-    background-color: #C14234;
-    font-weight: bold;
-    font-size: .9rem;
-    padding-right: .6vw;
-  }
-}
-@media screen and (max-width: 811px) {
-  /* line 93, ../scss/_nav-menu.scss */
-  .goles-logo {
-    top: -1.5rem;
-  }
-
-  /* line 96, ../scss/_nav-menu.scss */
-  .small-logo {
-    display: inline-block;
-  }
-
-  /* line 99, ../scss/_nav-menu.scss */
-  .big-logo {
-    display: none;
-  }
-}
 @media only screen and (max-width: 40em) {
-  /* line 105, ../scss/_nav-menu.scss */
-  .metaslider {
-    display: none;
-  }
-
-  /* line 108, ../scss/_nav-menu.scss */
-  .goles-logo {
-    display: block;
-  }
-
-  /* line 111, ../scss/_nav-menu.scss */
-  .big-logo {
-    display: block;
+  /* line 154, ../scss/_grid.scss */
+  .accordion-navigation {
+    width: 45% !important;
   }
 }
-/* line 116, ../scss/_nav-menu.scss */
-li.current-menu-item a {
-  color: #C14234;
-  background-color: #FFF2DA;
-}
-
-/*
-Stylings for pages
-*/
-/* line 5, ../scss/_pages.scss */
-#inner-content {
-  padding-top: .5rem !important;
-}
-
-/* line 9, ../scss/_pages.scss */
-.entry-content {
-  text-align: justify;
-  padding: .9rem .5rem 0;
-}
-
-/* line 14, ../scss/_pages.scss */
-.about-us {
-  text-align: justify;
-  font-family: roboto condensed;
-  color: #49494a;
-  background-color: #fcfcfc;
-  box-shadow: 6px 6px 0 #CDCDCD;
-  border: solid 1px #e9e9e9;
-  margin: 0 0 1rem;
-  border-radius: 4px;
-  display: inline-block;
-  padding: 0 0 1rem;
-  text-align: left;
-  box-shadow: 3px 3px 6px #CDCDCD;
-}
-/* line 21, ../scss/_pages.scss */
-.about-us .entry-content {
-  text-align: justify;
-  padding: .9rem 1rem 0;
-}
-/* line 27, ../scss/_pages.scss */
-.about-us h2 {
-  color: #49494a;
-  background-color: #F6F7F8;
-  font-size: large;
-  font-weight: bold;
-  margin: 0;
-  border-bottom: solid 1px #efefef;
-  padding: .9rem .5rem .2rem;
-  text-align: left;
-  text-transform: uppercase;
-  border-radius: 4px 4px 0 0;
-  text-align: center;
-}
-/* line 32, ../scss/_pages.scss */
-.about-us h1 {
-  font-family: 'Roboto Condensed', san-serif;
-  text-transform: uppercase;
-  font-size: 2.5rem;
-  font-weight: bold;
-  text-align: left;
-  color: #C5C5C5;
-}
-
 /* line 1, ../scss/_staffs.scss */
 .single-staff {
-  height: 141px;
+  height: 175px;
 }
 
 @media only screen and (max-width: 40em) {
   /* line 6, ../scss/_staffs.scss */
   .single-staff {
-    width: 33% !important;
+    width: 45% !important;
   }
 }

@@ -5,15 +5,15 @@ echo '<ul class="meetup_list">';
 foreach ( $events as $event ) {
 	printf(
 		'<li>
-            <div class="meetup-date">
+            <div class="meetup-calendar">
                 <div class="meetup-month">
                     %3$s
                 </div>
-                <div class="meetup-day">
+                <div class="meetup-date">
                     %4$s
                 </div>
             </div>
-            <div class="meetup-dt">
+            <div class="meetup-info">
                 <a class="meetup-name"href="%1$s">%2$s</a>
                 <div class="meetup-time">%5$s</div>
             </div>
